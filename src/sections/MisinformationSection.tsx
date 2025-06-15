@@ -1,4 +1,3 @@
-
 import React from "react";
 import QuizGame from "../components/QuizGame";
 
@@ -6,8 +5,7 @@ const MisinformationSection = () => {
   return (
     <section id="misinformation" className="py-16 bg-purpleblue-50/50">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold font-inter mb-2 text-purpleblue-600 flex items-center gap-2">
-          <span>📰</span>
+        <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-2 text-purpleblue-600 flex items-center gap-2">
           Can You Tell What’s Real?
         </h2>
         <p className="text-lg text-muted-foreground mb-5">

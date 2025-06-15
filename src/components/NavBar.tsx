@@ -1,44 +1,71 @@
 
-import React from "react";
-import { Link as RouterLink } from "react-router-dom";
-import { BookOpen, Shield, Users, Eye, Calendar, Check, Image } from "lucide-react";
+import React, { useState, useEffect } from "react";
 
 const navList = [
-  { id: "home", emoji: "🏠", label: "Home" },
-  { id: "algorithms", emoji: "🔄", label: "Algorithms" },
-  { id: "misinformation", emoji: "📰", label: "Misinformation" },
-  { id: "mental-health", emoji: "💬", label: "Mental Health" },
-  { id: "privacy", emoji: "🛡️", label: "Privacy" },
-  { id: "digital-balance", emoji: "⏳", label: "Digital Balance" },
-  { id: "about", emoji: "👥", label: "About Us" },
-  { id: "sources", emoji: "📖", label: "Sources" },
+  { id: "home", label: "Home" },
+  { id: "algorithms", label: "Algorithms" },
+  { id: "misinformation", label: "Misinformation" },
+  { id: "mental-health", label: "Mental Health" },
+  { id: "privacy", label: "Privacy" },
+  { id: "digital-balance", label: "Digital Balance" },
+  { id: "about", label: "About Us" },
+  { id: "sources", label: "Sources" },
 ];
 
 const NavBar = () => {
-  // Smooth scroll to anchor
+  const [activeId, setActiveId] = useState("home");
+
+  // Highlight nav based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      // Find the section closest to top
+      let closest = "home";
+      let minDist = Infinity;
+      navList.forEach(item => {
+        const el = document.getElementById(item.id);
+        if (el) {
+          const dist = Math.abs(el.getBoundingClientRect().top - 80); // header offset
+          if (dist < minDist) {
+            minDist = dist;
+            closest = item.id;
+          }
+        }
+      });
+      setActiveId(closest);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleNav = (e: React.MouseEvent, id: string) => {
     e.preventDefault();
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+    setActiveId(id);
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-gradient-to-r from-purpleblue-600 via-purpleblue-500 to-purpleblue-200 shadow-lg px-4 py-2 md:py-0">
+    <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur border-b border-purpleblue-100 shadow px-4 py-2 md:py-0">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between">
-        <span className="font-bold text-white tracking-wide text-lg md:text-xl font-inter">Trapped in the Feed</span>
-        <ul className="flex items-center gap-3 md:gap-5">
+        <span className="font-playfair font-bold tracking-wide text-2xl md:text-3xl text-purpleblue-600 select-none">Trapped in the Feed</span>
+        <ul className="flex items-center gap-2 md:gap-6">
           {navList.map((item) => (
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
                 onClick={e => handleNav(e, item.id)}
-                className="flex items-center gap-1 px-2 py-1 font-semibold text-white hover:bg-purpleblue-100/20 rounded transition cursor-pointer text-base md:text-lg"
+                className={`
+                  px-2 py-1 text-base md:text-lg font-semibold transition 
+                  border-b-2 border-transparent hover:border-purpleblue-500 hover:text-purpleblue-600
+                  ${activeId === item.id ? "border-purpleblue-600 text-purpleblue-600" : "text-muted-foreground"}
+                `}
+                style={{ fontFamily: 'Inter, sans-serif' }}
                 aria-label={item.label}
               >
-                <span aria-hidden="true">{item.emoji}</span>
-                <span className="hidden md:inline">{item.label}</span>
+                {item.label}
               </a>
             </li>
           ))}

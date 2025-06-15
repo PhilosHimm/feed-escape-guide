@@ -1,13 +1,10 @@
-
 import React from "react";
-import { BookOpen } from "lucide-react";
 
 const AlgorithmsSection = () => {
   return (
     <section id="algorithms" className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold font-inter mb-2 text-purpleblue-600 flex items-center gap-2">
-          <span>🔄</span>
+        <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-2 text-purpleblue-600 flex items-center gap-2">
           Why You Keep Scrolling
         </h2>
         <p className="text-lg text-muted-foreground mb-5">

@@ -1,15 +1,13 @@
-
 import React, { useState } from "react";
 import EmojiSlider from "../components/EmojiSlider";
 
 const MentalHealthSection = () => {
-  const [mood, setMood] = useState(2); // neutral default
+  const [mood, setMood] = useState(2);
 
   return (
     <section id="mental-health" className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold font-inter mb-2 text-purpleblue-600 flex items-center gap-2">
-          <span>💬</span>
+        <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-2 text-purpleblue-600 flex items-center gap-2">
           Your Feed and Your Feelings
         </h2>
         <p className="text-lg text-muted-foreground mb-6 max-w-2xl">

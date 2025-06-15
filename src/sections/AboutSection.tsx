@@ -11,8 +11,7 @@ const team = [
 const AboutSection = () => (
   <section id="about" className="py-16 bg-purpleblue-50/70 border-t border-purpleblue-100">
     <div className="max-w-3xl mx-auto px-4">
-      <h2 className="text-3xl font-bold font-inter mb-3 text-purpleblue-600 flex items-center gap-2">
-        <span>👥</span>
+      <h2 className="text-3xl font-bold font-playfair mb-3 text-purpleblue-600 flex items-center gap-2">
         About Us
       </h2>
       <p className="text-base mb-6 text-muted-foreground">
