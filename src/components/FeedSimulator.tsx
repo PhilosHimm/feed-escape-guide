@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Heart, MessageCircle, Share, User } from 'lucide-react';
+import { toast } from '@/components/ui/use-toast';
 
 const feedPosts = [
   {
@@ -50,9 +51,27 @@ const FeedSimulator = () => {
   const [visiblePosts, setVisiblePosts] = useState(feedPosts.slice(0, 3));
   const [interactions, setInteractions] = useState(0);
 
+  useEffect(() => {
+    const saved = localStorage.getItem("feedSimState");
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        if (Array.isArray(data.userProfile)) setUserProfile(data.userProfile);
+        if (Array.isArray(data.visiblePosts)) setVisiblePosts(data.visiblePosts);
+        if (typeof data.interactions === "number") setInteractions(data.interactions);
+      } catch (_) {}
+    }
+  }, []);
+
+  useEffect(() => {
+    const payload = { userProfile, visiblePosts, interactions };
+    localStorage.setItem("feedSimState", JSON.stringify(payload));
+  }, [userProfile, visiblePosts, interactions]);
+
   const handleLike = (postId: number, category: string) => {
     setUserProfile(prev => [...prev, category]);
     setInteractions(prev => prev + 1);
+    toast({ title: `Liked ${category}` });
     
     // Update post engagement
     setVisiblePosts(prev => prev.map(post => 

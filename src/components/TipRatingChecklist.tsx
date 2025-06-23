@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { toast } from "@/components/ui/use-toast";
 import { Star } from "lucide-react";
 
 type Tip = {
@@ -21,13 +22,16 @@ const TipRatingChecklist: React.FC = () => {
   const [ratings, setRatings] = useState<Record<number, number>>({});
 
   const toggle = (id: number) => {
-    setChecked((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
-    );
+    setChecked(prev => {
+      const updated = prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id];
+      toast({ title: prev.includes(id) ? "Unchecked" : "Completed" });
+      return updated;
+    });
   };
 
   const rateTip = (id: number, rating: number) => {
     setRatings((r) => ({ ...r, [id]: rating }));
+    toast({ title: `Rated ${rating}/5` });
   };
 
   return (
