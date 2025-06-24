@@ -79,6 +79,28 @@ const expandedQuizData: Quiz[] = [
     answer: 1,
     explanation: "This is fake! Beware of absurd correlations presented as scientific fact. Real research follows rigorous methodology.",
     category: "Pseudoscience"
+  },
+  {
+    id: 7,
+    question: "🎥 'Celebrity's Secret to Memory Boost: Watch 10 Seconds of Ads Every Morning!'",
+    options: [
+      "Real tip – must be new science",
+      "Fake news – ads won't help your memory",
+    ],
+    answer: 1,
+    explanation: "There's no evidence that watching ads improves memory. This is a typical sensational claim used to drive clicks.",
+    category: "Advertising Claims"
+  },
+  {
+    id: 8,
+    question: "🛑 'Breaking: Government to Ban All Homework Starting Tomorrow!'",
+    options: [
+      "Real policy – time to celebrate",
+      "Fake news – too extreme to be true",
+    ],
+    answer: 1,
+    explanation: "Major policy changes would be announced by official government channels. This headline is fake.",
+    category: "Education Misinformation"
   }
 ];
 

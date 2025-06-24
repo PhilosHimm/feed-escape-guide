@@ -43,6 +43,22 @@ const feedPosts = [
     category: "education",
     engagement: 0,
     avatar: "📚"
+  },
+  {
+    id: 6,
+    user: "MusicMad",
+    content: "Top 5 indie bands you need to hear 🎧",
+    category: "music",
+    engagement: 0,
+    avatar: "🎶"
+  },
+  {
+    id: 7,
+    user: "EcoWarrior",
+    content: "Easy swaps to reduce plastic waste 🌱",
+    category: "environment",
+    engagement: 0,
+    avatar: "🌿"
   }
 ];
 

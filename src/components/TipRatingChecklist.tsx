@@ -15,6 +15,8 @@ const defaultList: Tip[] = [
   { id: 3, label: "Try Forest or ScreenZen for focus", appLink: "https://forestapp.cc/" },
   { id: 4, label: "Review Screen Time/Digital Wellbeing" },
   { id: 5, label: "Leave phone out of reach during study" },
+  { id: 6, label: "Schedule daily downtime" },
+  { id: 7, label: "Try grayscale mode at night" },
 ];
 
 const TipRatingChecklist: React.FC = () => {
