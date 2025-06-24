@@ -1,6 +1,6 @@
 
 import React from "react";
-import QuizGame from "../components/QuizGame";
+import ExpandedQuizGame from "../components/ExpandedQuizGame";
 
 const Misinformation = () => (
   <div className="py-12 px-4 max-w-4xl mx-auto">
@@ -10,7 +10,7 @@ const Misinformation = () => (
     <p className="text-xl text-muted-foreground mb-4">
       Your feed might trap you in a <strong className="text-purpleblue-600">filter bubble</strong>, only showing what you agree with. Echo chambers and fake news can trick anyone. Test your skills:
     </p>
-    <QuizGame />
+    <ExpandedQuizGame />
     <div className="bg-purpleblue-50/70 rounded-xl mt-8 p-6 shadow flex flex-col md:flex-row gap-7 items-center">
       <img
         src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=420&q=80"
