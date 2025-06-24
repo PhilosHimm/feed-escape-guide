@@ -13,9 +13,11 @@ const fetchTips = async (): Promise<Tip[]> => {
 };
 
 const MentalHealthCarousel = () => {
-  const { data: tips } = useQuery({ queryKey: ["tips"], queryFn: fetchTips });
+  const { data: tips, isLoading, isError } = useQuery({ queryKey: ["tips"], queryFn: fetchTips });
 
-  if (!tips) return null;
+  if (isLoading) return <div className="text-center mt-4">Loading...</div>;
+  if (isError) return <div className="text-center mt-4 text-red-500">Failed to load tips. Please try again later.</div>;
+  if (!tips || tips.length === 0) return <div className="text-center mt-4">No tips available.</div>;
 
   return (
     <div className="w-full max-w-md mx-auto mt-4">
