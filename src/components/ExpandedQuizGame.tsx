@@ -1,6 +1,7 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Check, X, Info, ExternalLink } from "lucide-react";
+import { toast } from "@/components/ui/use-toast";
 
 type Quiz = {
   id: number;
@@ -78,6 +79,28 @@ const expandedQuizData: Quiz[] = [
     answer: 1,
     explanation: "This is fake! Beware of absurd correlations presented as scientific fact. Real research follows rigorous methodology.",
     category: "Pseudoscience"
+  },
+  {
+    id: 7,
+    question: "🎥 'Celebrity's Secret to Memory Boost: Watch 10 Seconds of Ads Every Morning!'",
+    options: [
+      "Real tip – must be new science",
+      "Fake news – ads won't help your memory",
+    ],
+    answer: 1,
+    explanation: "There's no evidence that watching ads improves memory. This is a typical sensational claim used to drive clicks.",
+    category: "Advertising Claims"
+  },
+  {
+    id: 8,
+    question: "🛑 'Breaking: Government to Ban All Homework Starting Tomorrow!'",
+    options: [
+      "Real policy – time to celebrate",
+      "Fake news – too extreme to be true",
+    ],
+    answer: 1,
+    explanation: "Major policy changes would be announced by official government channels. This headline is fake.",
+    category: "Education Misinformation"
   }
 ];
 
@@ -98,20 +121,51 @@ const ExpandedQuizGame: React.FC = () => {
   const [completed, setCompleted] = useState<number[]>([]);
   const [showTips, setShowTips] = useState(false);
 
+  // Load saved progress from localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem("expandedQuizProgress");
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        if (typeof data.current === "number") setCurrent(data.current);
+        if (typeof data.score === "number") setScore(data.score);
+        if (Array.isArray(data.completed)) setCompleted(data.completed);
+      } catch (_) {
+        /* ignore parse errors */
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    const payload = { current, score, completed };
+    localStorage.setItem("expandedQuizProgress", JSON.stringify(payload));
+  }, [current, score, completed]);
+
   const handleOption = (idx: number) => {
     setSelected(idx);
     setShowExplanation(true);
-    
+
     if (idx === expandedQuizData[current].answer && !completed.includes(current)) {
       setScore(prev => prev + 1);
       setCompleted(prev => [...prev, current]);
+      toast({ title: "Correct!", description: "Nice job." });
+    } else if (idx !== expandedQuizData[current].answer) {
+      toast({
+        title: "Oops",
+        description: "That's not quite right.",
+        variant: "destructive",
+      });
     }
   };
 
   const handleNext = () => {
     setSelected(null);
     setShowExplanation(false);
-    setCurrent((c) => (c + 1) % expandedQuizData.length);
+    const next = (current + 1) % expandedQuizData.length;
+    if (next === 0) {
+      toast({ title: "Quiz completed", description: `Score: ${score}/${expandedQuizData.length}` });
+    }
+    setCurrent(next);
   };
 
   const resetQuiz = () => {
@@ -120,6 +174,7 @@ const ExpandedQuizGame: React.FC = () => {
     setCurrent(0);
     setScore(0);
     setCompleted([]);
+    toast({ title: "Quiz reset" });
   };
 
   const currentQuiz = expandedQuizData[current];

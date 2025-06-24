@@ -1,6 +1,7 @@
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useIsMobile } from "../hooks/use-mobile";
 import { ArrowRight } from "lucide-react";
 
 const sections = [
@@ -38,6 +39,7 @@ const sections = [
 
 const Index = () => {
   const navigate = useNavigate();
+  const isMobile = useIsMobile();
 
   return (
     <div className="bg-gradient-to-br from-purpleblue-100 via-purpleblue-50 to-white min-h-screen font-inter pb-10">
@@ -93,6 +95,11 @@ const Index = () => {
         <div className="mt-16 text-xs text-muted-foreground text-center w-full">
           &copy; 2025 TMU CEID100 · Trapped in the Feed — <a href="/about" className="underline px-1">About Us</a>
         </div>
+        {isMobile && (
+          <div className="mt-4 text-xs text-purpleblue-700" aria-live="polite">
+            Tip: swipe horizontally to explore sections on mobile.
+          </div>
+        )}
       </main>
     </div>
   );

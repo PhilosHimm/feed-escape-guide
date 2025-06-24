@@ -71,3 +71,22 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Verifying project setup
+
+This repository uses **TypeScript** and has the **shadcn/ui** project structure (see `components.json`). UI components are stored under `src/components/ui`. If the folder does not exist, create it so imports using `@/components/ui` resolve correctly.
+
+Tailwind CSS is currently on v3.4. To upgrade or install Tailwind v4, run:
+
+```bash
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npx tailwindcss init -p
+```
+
+You can also initialize shadcn components with:
+
+```bash
+npx shadcn-ui@latest init
+```
+
+Follow the Tailwind and shadcn documentation for further configuration.
