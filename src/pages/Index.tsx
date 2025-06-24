@@ -3,6 +3,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useIsMobile } from "../hooks/use-mobile";
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { TypographyH1, TypographyH2, TypographyLead, TypographyP } from "@/components/ui/typography";
 
 const sections = [
   {
@@ -40,67 +43,75 @@ const sections = [
 const Index = () => {
   const navigate = useNavigate();
   const isMobile = useIsMobile();
-
   return (
-    <div className="bg-gradient-to-br from-purpleblue-100 via-purpleblue-50 to-white min-h-screen font-inter pb-10">
-      <main className="max-w-6xl mx-auto px-4 flex flex-col items-center">
-        <header className="w-full text-center mt-12 mb-10">
-          <h1 className="text-5xl md:text-6xl font-extrabold font-playfair tracking-tight text-purpleblue-700 mb-3 drop-shadow">
+    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/20">
+      <div className="container mx-auto px-4 py-8">
+        <header className="text-center space-y-6 mb-16">
+          <TypographyH1 className="text-6xl md:text-7xl">
             Trapped in the Feed
-          </h1>
-          <h2 className="text-2xl font-playfair text-purpleblue-600/90 mb-6">
+          </TypographyH1>
+          <TypographyH2 className="text-muted-foreground">
             How Social Media Shapes What You See, Think, and Feel
-          </h2>
-          <div className="text-xl font-playfair text-muted-foreground mb-8 animate-fade-in">
+          </TypographyH2>
+          <TypographyLead className="max-w-2xl mx-auto">
             Ever wonder why your feed knows you better than your friends?
-          </div>
-          <button
-            className="px-8 py-3 rounded-full bg-purpleblue-700 hover:bg-purpleblue-600 text-white font-bold text-lg shadow transition animate-enter"
+          </TypographyLead>
+          <Button
+            size="lg"
+            className="text-lg px-8 py-3"
             onClick={() => navigate("/algorithms")}
           >
             Explore the Feed
-            <ArrowRight className="ml-2 inline -mt-1" size={22} />
-          </button>
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
         </header>
-        <div className="grid auto-rows-fr grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full mt-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {sections.map((section, idx) => (
-            <div
+            <Card
               key={section.name}
-              className="group relative bg-white/80 shadow-2xl rounded-3xl border border-purpleblue-100 p-0 flex flex-col items-center cursor-pointer hover-scale transition"
+              className="cursor-pointer hover:shadow-lg transition-shadow group"
               onClick={() => navigate(section.route)}
-              tabIndex={0}
-              aria-label={`Go to ${section.name}`}
-              onKeyDown={e => { if (e.key === "Enter") navigate(section.route); }}
             >
-              <img
-                src={section.image}
-                alt={`${section.name} section card`}
-                className="rounded-t-3xl w-full h-44 object-cover shadow-md"
-              />
-              <div className="w-full p-6 flex flex-col flex-1">
-                <h3 className="font-playfair font-bold text-2xl text-purpleblue-700 mb-2">
-                  {section.name}
-                </h3>
-                <p className="text-base text-muted-foreground mb-4 min-h-16">
-                  {section.description}
-                </p>
-                <span className="mt-auto flex items-center gap-1 text-purpleblue-700 font-semibold group-hover:underline transition">
-                  Start
-                  <ArrowRight className="inline -mt-1" size={18} />
-                </span>
+              <div className="aspect-video overflow-hidden rounded-t-lg">
+                <img
+                  src={section.image}
+                  alt={`${section.name} section`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
-            </div>
+              <CardHeader>
+                <CardTitle className="group-hover:text-primary transition-colors">
+                  {section.name}
+                </CardTitle>
+                <CardDescription>
+                  {section.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <div className="flex items-center text-primary font-medium group-hover:underline">
+                  Start
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
-        <div className="mt-16 text-xs text-muted-foreground text-center w-full">
-          &copy; 2025 TMU CEID100 · Trapped in the Feed — <a href="/about" className="underline px-1">About Us</a>
-        </div>
-        {isMobile && (
-          <div className="mt-4 text-xs text-purpleblue-700" aria-live="polite">
-            Tip: swipe horizontally to explore sections on mobile.
-          </div>
-        )}
-      </main>
+
+        <footer className="text-center space-y-4">
+          <TypographyP className="text-sm text-muted-foreground">
+            &copy; 2025 TMU CEID100 · Trapped in the Feed —{" "}
+            <a href="/about" className="underline hover:text-foreground">
+              About Us
+            </a>
+          </TypographyP>
+          {isMobile && (
+            <TypographyP className="text-xs text-muted-foreground">
+              Tip: swipe horizontally to explore sections on mobile.
+            </TypographyP>
+          )}
+        </footer>
+      </div>
     </div>
   );
 };

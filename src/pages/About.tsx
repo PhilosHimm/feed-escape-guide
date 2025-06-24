@@ -1,25 +1,40 @@
-
 import React from "react";
+import { TypographyH1, TypographyP } from "@/components/ui/typography";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+
 const team = [
-  { name: "Aliyah Chen" },
-  { name: "Jamal Stevenson" },
-  { name: "Rina Provenzano" },
-  { name: "Faculty: Prof. Zhang" },
-  { name: "CEID100, Toronto Metropolitan University, Spring 2025" }
+	{ name: "Philos Himm" },
+	{ name: "Jamal Stevenson" },
+	{ name: "Rina Provenzano" },
+	{ name: "Faculty: Prof. Zhang" },
+	{ name: "CEID100, Toronto Metropolitan University, Spring 2025" }
 ];
 
 const About = () => (
-  <div className="py-12 px-4 max-w-2xl mx-auto">
-    <h1 className="font-playfair text-4xl md:text-5xl font-bold text-purpleblue-700 mb-4">About Us</h1>
-    <p className="text-lg mb-6 text-muted-foreground">
-      We’re a student team at Toronto Metropolitan University (TMU) passionate about digital wellbeing. This guide was created for CEID100, Spring 2025.
-    </p>
-    <ul className="flex flex-col gap-2">
-      {team.map((person, i) => (
-        <li key={i} className="rounded py-2 px-3 bg-white shadow text-purpleblue-700 font-semibold">{person.name}</li>
-      ))}
-    </ul>
-  </div>
+	<div className="container mx-auto py-8 px-4">
+		<div className="max-w-4xl mx-auto space-y-8">
+			<TypographyH1>About Us</TypographyH1>
+
+			<TypographyP className="text-lg">
+				We're a student team at Toronto Metropolitan University (TMU) passionate
+				about digital wellbeing. This guide was created for CEID100, Spring 2025.
+			</TypographyP>
+
+			<Card>
+				<CardContent className="pt-6">
+					<h2 className="text-xl font-semibold mb-4">Our Team</h2>
+					<div className="flex flex-wrap gap-2">
+						{team.map((person, i) => (
+							<Badge key={i} variant="secondary" className="text-sm">
+								{person.name}
+							</Badge>
+						))}
+					</div>
+				</CardContent>
+			</Card>
+		</div>
+	</div>
 );
 
 export default About;
