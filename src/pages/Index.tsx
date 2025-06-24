@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { TypographyH1, TypographyH2, TypographyLead, TypographyP } from "@/components/ui/typography";
+import { SectionNavigation } from "@/components/SectionNavigation";
 
 const sections = [
   {
@@ -95,10 +96,11 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
-          ))}
-        </div>
+          ))}        </div>
 
-        <footer className="text-center space-y-4">
+        <SectionNavigation currentPath="/" />
+
+        <footer className="text-center space-y-4 mt-8">
           <TypographyP className="text-sm text-muted-foreground">
             &copy; 2025 TMU CEID100 · Trapped in the Feed —{" "}
             <a href="/about" className="underline hover:text-foreground">

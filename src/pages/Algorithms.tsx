@@ -2,34 +2,34 @@
 import React from "react";
 import AnimatedFlowchart from "../components/AnimatedFlowchart";
 import FeedSimulator from "../components/FeedSimulator";
+import { TypographyH1, TypographyH2, TypographyP } from "@/components/ui/typography";
+import { SectionNavigation } from "@/components/SectionNavigation";
 
 const Algorithms = () => (
-  <div className="py-12 px-4 max-w-6xl mx-auto">
-    <h1 className="font-playfair text-4xl md:text-5xl font-bold text-purpleblue-700 mb-4 text-center">
-      Why You Keep Scrolling
-    </h1>
-    <p className="text-xl text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
-      Social media feeds are powered by algorithms that adapt with every action. 
-      Understanding how they work is the first step to taking control.
-    </p>
+  <div className="container mx-auto py-8 px-4">
+    <div className="max-w-6xl mx-auto space-y-12">
+      <div className="text-center space-y-4">
+        <TypographyH1>Why You Keep Scrolling</TypographyH1>
+        <TypographyP className="text-xl max-w-3xl mx-auto">
+          Social media feeds are powered by algorithms that adapt with every action. 
+          Understanding how they work is the first step to taking control.
+        </TypographyP>
+      </div>      {/* Algorithm Process Flow */}
+      <section>
+        <TypographyH2 className="text-center mb-6">
+          How Algorithms Shape Your Experience
+        </TypographyH2>
+        <AnimatedFlowchart />
+      </section>
 
-    {/* Algorithm Process Flow */}
-    <section className="mb-12">
-      <h2 className="text-2xl font-playfair font-bold text-purpleblue-700 mb-6 text-center">
-        How Algorithms Shape Your Experience
-      </h2>
-      <AnimatedFlowchart />
-    </section>
-
-    {/* Interactive Feed Simulator */}
-    <section className="mb-12">
-      <h2 className="text-2xl font-playfair font-bold text-purpleblue-700 mb-6 text-center">
-        Try It Yourself: Feed Algorithm Simulator
-      </h2>
-      <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
-        Like posts below and watch how the algorithm learns your preferences in real-time. 
-        This is a simplified version of what happens on actual social media platforms.
-      </p>
+      {/* Interactive Feed Simulator */}
+      <section>
+        <TypographyH2 className="text-center mb-6">
+          Try It Yourself: Feed Algorithm Simulator
+        </TypographyH2>        <TypographyP className="text-center mb-6 max-w-2xl mx-auto">
+          Like posts below and watch how the algorithm learns your preferences in real-time. 
+          This is a simplified version of what happens on actual social media platforms.
+        </TypographyP>
       <FeedSimulator />
     </section>
 
@@ -104,9 +104,11 @@ const Algorithms = () => (
         className="inline-flex items-center gap-2 underline text-purpleblue-600 hover:text-purpleblue-700" 
         target="_blank" 
         rel="noopener noreferrer"
-      >
-        Module 5 Course Reading
+      >        Module 5 Course Reading
       </a>
+    </div>
+
+    <SectionNavigation currentPath="/algorithms" />
     </div>
   </div>
 );

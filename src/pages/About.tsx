@@ -2,6 +2,7 @@ import React from "react";
 import { TypographyH1, TypographyP } from "@/components/ui/typography";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { SectionNavigation } from "@/components/SectionNavigation";
 
 const team = [
 	{ name: "Philos Himm" },
@@ -30,9 +31,10 @@ const About = () => (
 								{person.name}
 							</Badge>
 						))}
-					</div>
-				</CardContent>
+					</div>				</CardContent>
 			</Card>
+
+			<SectionNavigation currentPath="/about" />
 		</div>
 	</div>
 );
