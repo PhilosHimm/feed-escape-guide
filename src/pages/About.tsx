@@ -5,10 +5,10 @@ import { Badge } from "@/components/ui/badge";
 
 const team = [
 	{ name: "Philos Himm" },
-	{ name: "Jamal Stevenson" },
-	{ name: "Rina Provenzano" },
-	{ name: "Faculty: Prof. Zhang" },
-	{ name: "CEID100, Toronto Metropolitan University, Spring 2025" }
+	{ name: "Urwa Najeeb" },
+	{ name: "Amaira Bons" },
+	{ name: "Faculty: Prof. Guy" },
+	{ name: "CEID100, Toronto Metropolitan University, Spring/Summer 2025" }
 ];
 
 const About = () => (
