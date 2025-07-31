@@ -10,33 +10,33 @@ import { SectionNavigation } from "@/components/SectionNavigation";
 
 const sections = [
   {
-    name: "Why You Keep Scrolling",
-    route: "/algorithms",
-    description: "Explore how algorithms deliver the feed that keeps you glued to your phone.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Real or Fake?",
-    route: "/misinformation",
-    description: "Test your digital detective skills: can you spot misinformation?",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=420&q=80",
-  },
-  {
-    name: "My Feed, My Mood",
+    name: "Your Mental Health Online",
     route: "/mental-health",
-    description: "Reflect on the mental health impact of endless scrolling.",
+    description: "Learn how social media affects your mood, sleep, and well-being—and discover happiness hacks for healthier usage.",
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=420&q=80",
   },
   {
-    name: "What They Know About You",
+    name: "How Algorithms Work",
+    route: "/algorithms",
+    description: "Understand how feeds are personalized and why breaking filter bubbles supports mental wellness.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    name: "Spotting Misinformation",
+    route: "/misinformation",
+    description: "Protect your peace of mind by learning to identify false information and reduce anxiety from information overload.",
+    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=420&q=80",
+  },
+  {
+    name: "Privacy for Peace of Mind",
     route: "/privacy",
-    description: "See how your data is tracked and shared across the web.",
+    description: "Feel secure online by understanding data collection and taking control of your personal information.",
     image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80",
   },
   {
-    name: "Take Back Your Time",
+    name: "Digital Balance & Boundaries",
     route: "/digital-balance",
-    description: "Tools and tricks for a healthier relationship with your devices.",
+    description: "Build sustainable habits with screen time limits, offline activities, and digital detox strategies.",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
   }
 ];
@@ -49,20 +49,26 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8">
         <header className="text-center space-y-6 mb-16">
           <TypographyH1 className="text-6xl md:text-7xl">
-            Trapped in the Feed
+            Digital Wellness Guide
           </TypographyH1>
           <TypographyH2 className="text-muted-foreground">
-            How Social Media Shapes What You See, Think, and Feel
+            Building a Healthier Relationship with Technology
           </TypographyH2>
-          <TypographyLead className="max-w-2xl mx-auto">
-            Ever wonder why your feed knows you better than your friends?
+          <TypographyLead className="max-w-3xl mx-auto">
+            Social media offers incredible benefits—connection, learning, creativity. But heavy or uninformed use can impact your mental health, privacy, and ability to think critically. This guide helps you understand algorithmic influences, recognize misinformation, protect your data, and develop healthy online habits.
           </TypographyLead>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-4xl mx-auto text-left">
+            <h3 className="font-semibold text-lg mb-3 text-center">What is Digital Wellness?</h3>
+            <TypographyP className="text-sm">
+              Digital wellness is about finding balance between technology's benefits and risks. It means using social media intentionally, understanding how algorithms work, spotting misinformation, protecting your privacy, and maintaining your mental health online. Research shows that mindful technology use can reduce anxiety, improve sleep, and help you stay connected to what matters most.
+            </TypographyP>
+          </div>
           <Button
             size="lg"
             className="text-lg px-8 py-3"
-            onClick={() => navigate("/algorithms")}
+            onClick={() => navigate("/Algorithms")}
           >
-            Explore the Feed
+            Start Your Wellness Journey
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </header>
