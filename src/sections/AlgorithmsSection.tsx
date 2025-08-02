@@ -8,7 +8,7 @@ const AlgorithmsSection = () => {
           Why You Keep Scrolling
         </h2>
         <p className="text-lg text-muted-foreground mb-5">
-          Algorithms shape what you see by showing more of what you <span className="font-semibold text-purpleblue-500">like, watch, and share</span>. The more you interact, the more the app learns about you—keeping you “trapped” in the feed.
+          Algorithms shape what you see by showing more of what you <span className="font-semibold text-purpleblue-500">like, watch, and share</span>. The more you interact, the more the app learns about youkeeping you “trapped” in the feed.
         </p>
         <div className="rounded-lg shadow bg-gradient-to-br from-purpleblue-50/70 via-purpleblue-50/60 to-purpleblue-100/80 p-6 my-6 flex flex-col md:flex-row items-center gap-6">
           <img

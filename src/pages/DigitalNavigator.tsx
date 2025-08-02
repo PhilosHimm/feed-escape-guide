@@ -62,7 +62,7 @@ const scenarios: Scenario[] = [
       { text: "Decline the unnecessary permissions (microphone, contacts) and only allow camera if the game explicitly needs it (e.g., for AR features).", points: 5, isCorrect: true },
       { text: "Delete the app. It's too suspicious.", points: 2, isClose: true }
     ],
-    explanation: "Only grant permissions that make sense for the app's functionality. Your personal data is valuable—protect it."
+    explanation: "Only grant permissions that make sense for the app's functionality. Your personal data is valuableprotect it."
   },
   {
     id: 5,

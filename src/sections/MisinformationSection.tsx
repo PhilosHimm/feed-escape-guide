@@ -9,7 +9,7 @@ const MisinformationSection = () => {
           Can You Tell What’s Real?
         </h2>
         <p className="text-lg text-muted-foreground mb-5">
-          Your feed might trap you in a <span className="font-semibold text-purpleblue-500">filter bubble</span>—showing only what you already agree with. Echo chambers and fake news can fool anyone. Try the quiz:
+          Your feed might trap you in a <span className="font-semibold text-purpleblue-500">filter bubble</span>showing only what you already agree with. Echo chambers and fake news can fool anyone. Try the quiz:
         </p>
         <QuizGame />
         <div className="mt-8 flex flex-col md:flex-row gap-6 items-center">

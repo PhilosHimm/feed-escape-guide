@@ -9,7 +9,7 @@ const steps = [
   },
   {
     title: "Accept cookies",
-    detail: "Cookies store your activity—sites love when you accept everything.",
+    detail: "Cookies store your activitysites love when you accept everything.",
   },
   {
     title: "Tracked across the web",

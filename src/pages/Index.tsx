@@ -18,7 +18,7 @@ const sections = [
   {
     name: "Your Mental Health Online",
     route: "/mental-health",
-    description: "Learn how social media affects your mood, sleep, and well-being—and discover happiness hacks for healthier usage.",
+    description: "Learn how social media affects your mood, sleep, and well-being and discover happiness hacks for healthier usage.",
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=420&q=80",
   },
   {
@@ -115,7 +115,7 @@ const Index = () => {
 
         <footer className="text-center space-y-4 mt-8">
           <TypographyP className="text-sm text-muted-foreground">
-            &copy; 2025 TMU CEID100 · Trapped in the Feed —{" "}
+            &copy; 2025 TMU CEID100 · Trapped in the Feed{" "}
             <a href="/about" className="underline hover:text-foreground">
               About Us
             </a>

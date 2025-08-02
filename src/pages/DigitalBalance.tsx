@@ -17,7 +17,7 @@ const DigitalBalance = () => (
         <Alert className="bg-green-50 border-green-200">
           <Scale className="h-4 w-4" />
           <AlertDescription>
-            <strong>Key Insight:</strong> Finding balance is not a zero-sum game—you don't have to abandon digital tools entirely, but rather learn to manage their use effectively for optimal mental health and productivity.
+            <strong>Key Insight:</strong> Finding balance is not a zero-sum gameyou don't have to abandon digital tools entirely, but rather learn to manage their use effectively for optimal mental health and productivity.
           </AlertDescription>
         </Alert>
       </div>
@@ -69,7 +69,7 @@ const DigitalBalance = () => (
               <Alert className="bg-red-100 border-red-300">
                 <Brain className="h-4 w-4" />
                 <AlertDescription>
-                  <strong>Critical Insight:</strong> "Multitasking is a myth." Studies show that switching between tasks, especially with digital tools, diverts crucial brain activity and reduces efficiency through "attention residue"—the mind continues thinking about previous tasks even after moving to new ones.
+                  <strong>Critical Insight:</strong> "Multitasking is a myth." Studies show that switching between tasks, especially with digital tools, diverts crucial brain activity and reduces efficiency through "attention residuethe mind continues thinking about previous tasks even after moving to new ones.
                 </AlertDescription>
               </Alert>
 
@@ -135,7 +135,7 @@ const DigitalBalance = () => (
                   <ul className="space-y-2 text-sm">
                     <li>• Check inbox only once per hour instead of constantly</li>
                     <li>• Unsubscribe from unnecessary newsletters</li>
-                    <li>• Don't respond immediately—some "urgent" messages resolve themselves</li>
+                    <li>• Don't respond immediatelysome "urgent" messages resolve themselves</li>
                     <li>• Be succinct and use assertive statements</li>
                     <li>• Aim for "inbox zero" by end of each day</li>
                   </ul>
@@ -236,7 +236,7 @@ const DigitalBalance = () => (
                   <ul className="space-y-2 text-sm">
                     <li>• Be aware of "filter bubbles" creating narrow information ranges</li>
                     <li>• "Think through" initial emotional reactions before acting</li>
-                    <li>• Apply critical thinking—disinformation exploits emotions</li>
+                    <li>• Apply critical thinkingdisinformation exploits emotions</li>
                     <li>• Verify sources by checking website/publisher reputation</li>
                   </ul>
                   
@@ -286,7 +286,7 @@ const DigitalBalance = () => (
                 <div className="bg-teal-100 p-6 rounded-lg">
                   <h4 className="font-semibold mb-3">24hr "Feed Detox"</h4>
                   <TypographyP className="text-sm mb-3">
-                    Attempt a 24hr "feed detox" — can you spend a full day social-media free?
+                    Attempt a 24hr "feed detox"  can you spend a full day social-media free?
                   </TypographyP>
                   <TypographyP className="text-sm">
                     Try and block your top distractions for a day and see what happens! Use your phones' built in limits or apps to stay strong. What did you gain?

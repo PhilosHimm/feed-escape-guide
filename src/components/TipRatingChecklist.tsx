@@ -38,7 +38,7 @@ const TipRatingChecklist: React.FC = () => {
 
   return (
     <div className="bg-white p-4 rounded-lg shadow space-y-2 max-w-lg mx-auto">
-      <div className="font-bold text-purpleblue-600 mb-2">Digital Wellness Tools — Try & Rate!</div>
+      <div className="font-bold text-purpleblue-600 mb-2">Digital Wellness Tools  Try & Rate!</div>
       <ul className="list-none space-y-3">
         {defaultList.map((item) => (
           <li key={item.id} className="flex flex-col gap-1">

@@ -58,7 +58,7 @@ const AnimatedFlowchart = () => {
         ))}
       </div>
       <div className="mt-2 text-purpleblue-600 text-sm font-medium">
-        Your activity shapes your entire experience—be mindful of what you click!
+        Your activity shapes your entire experiencebe mindful of what you click!
       </div>
     </div>
   );

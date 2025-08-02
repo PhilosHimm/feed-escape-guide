@@ -18,7 +18,7 @@ const DigitalBalanceSection = () => {
           </div>
           <div className="flex-1 min-w-xs">
             <div className="mb-2 text-purpleblue-600">
-              <strong>Challenge:</strong> Try a 24hr “feed detox” — can you do it? 💡
+              <strong>Challenge:</strong> Try a 24hr “feed detox”  can you do it? 💡
             </div>
             <div>
               <a href="https://www.humane.tech/module4" className="underline" target="_blank" rel="noopener noreferrer">Stolen Focus by Johann Hari (Course Reading)</a>

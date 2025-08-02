@@ -8,7 +8,7 @@ const team = [
 	{ name: "Philos Himm" },
 	{ name: "Urwa Najeeb" },
 	{ name: "Amaira Bons" },
-	{ name: "Faculty: Prof. Guy" },
+	{ name: "Faculty: Prof. Guy Hoskins" },
 	{ name: "CEID100, Toronto Metropolitan University, Spring/Summer 2025" }
 ];
 
@@ -18,18 +18,18 @@ const About = () => (
 			<TypographyH1>About Us</TypographyH1>
 
 			<TypographyP className="text-lg">
-				We're a student team at Toronto Metropolitan University (TMU) creating evidence-based resources for digital wellness. Our mission is to help people understand how algorithms, misinformation, privacy concerns, and digital habits impact mental health and well-being, then provide practical tools for healthier technology use.
+				We are TMU students dedicated to promoting digital wellness by addressing algorithms, misinformation, privacy, and habits for healthier tech use.
 			</TypographyP>
 
 			<Card>
 				<CardContent className="pt-6">
 					<h2 className="text-xl font-semibold mb-4">Our Digital Wellness Mission</h2>
 					<TypographyP className="mb-4">
-						This project's central theme is <strong>digital wellness</strong>—the practice of maintaining a healthy relationship with technology that supports rather than harms your mental and emotional well-being. Each section of our guide contributes to this goal:
+						This project's central theme is <strong>digital wellness</strong>, the practice of maintaining a healthy relationship with technology that supports rather than harms your mental and emotional well-being. Each section of our guide contributes to this goal:
 					</TypographyP>
 					<ul className="space-y-2 text-sm">
-						<li>• <strong>Mental Health:</strong> Understanding how social media affects mood, sleep, and anxiety</li>
 						<li>• <strong>Algorithms:</strong> Breaking filter bubbles to reduce stress and access diverse perspectives</li>
+						<li>• <strong>Mental Health:</strong> Understanding how social media affects mood, sleep, and anxiety</li>
 						<li>• <strong>Misinformation:</strong> Protecting peace of mind through critical thinking and source verification</li>
 						<li>• <strong>Privacy:</strong> Building security and confidence through data protection</li>
 						<li>• <strong>Digital Balance:</strong> Creating sustainable habits for long-term wellness</li>

@@ -9,7 +9,7 @@ const PrivacySection = () => {
           What They Know About You
         </h2>
         <p className="text-lg text-muted-foreground mb-6">
-          Every click, like, and watch builds a digital profile. This helps companies serve targeted ads and content—sometimes to change your behavior.
+          Every click, like, and watch builds a digital profile. This helps companies serve targeted ads and contentsometimes to change your behavior.
         </p>
         <div className="flex flex-col md:flex-row gap-7 items-center py-6">
           <div className="bg-white rounded-lg shadow flex-1 p-4">

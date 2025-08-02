@@ -17,7 +17,7 @@ const Privacy = () => (
         <Alert className="bg-red-50 border-red-200">
           <AlertTriangle className="h-4 w-4" />
           <AlertDescription>
-            <strong>Critical Reality:</strong> Once something is posted online, it is very difficult to get rid of it. Internet content is like a tattoo—sticking with you for a very long time, and traces may remain even after removal.
+            <strong>Critical Reality:</strong> Once something is posted online, it is very difficult to get rid of it. Internet content is like a tattoosticking with you for a very long time, and traces may remain even after removal.
           </AlertDescription>
         </Alert>
       </div>
@@ -46,7 +46,7 @@ const Privacy = () => (
                 
                 <div className="bg-purple-100 p-4 rounded-lg">
                   <TypographyP className="text-sm">
-                    <strong>Key Insight:</strong> Personal data has been called "the new oil"—marking it as the most valuable resource of the 21st century. Understanding this helps you recognize why your privacy matters so much.
+                    <strong>Key Insight:</strong> Personal data has been called "the new oil" marking it as the most valuable resource of the 21st century. Understanding this helps you recognize why your privacy matters so much.
                   </TypographyP>
                 </div>
               </div>
@@ -230,7 +230,7 @@ const Privacy = () => (
                     <li>• Regularly Google your own name to review online presence</li>
                     <li>• Close abandoned accounts and update active ones</li>
                     <li>• Delete or "bury" undesirable content with new positive posts</li>
-                    <li>• Think before you click—pause and verify before sharing</li>
+                    <li>• Think before you clickpause and verify before sharing</li>
                   </ul>
                   
                   <h4 className="font-semibold">Ad-Blocking & Tracking Protection</h4>
