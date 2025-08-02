@@ -94,32 +94,37 @@ const sources = [
 		desc: "Images and graphics used in this digital wellness guide:",
 		links: [
 			{
-				label: "Digital wellness concept image",
-				url: "/digital-wellness.jpg",
+				label: "Digital balance image",
+				url: "https://unsplash.com/photos/stack-rock-on-seashore-FO7bKvgETgQ",
 			},
 			{
 				label: "Algorithm visualization image",
-				url: "/algorithms.jpg",
+				url: "https://unsplash.com/photos/matrix-movie-still-iar-afB0QQw",
 			},
 			{
 				label: "Misinformation awareness image",
-				url: "/misinformation.jpg",
+				url: "https://unsplash.com/photos/a-blue-typewriter-sitting-on-top-of-a-desk-next-to-a-tv-34zq7tzqRSw",
 			},
 			{
 				label: "Mental health support image",
-				url: "/mental-health.jpg",
+				url: "https://unsplash.com/photos/man-in-yellow-and-black-crew-neck-shirt-1sfwsVpe34A",
 			},
 			{
 				label: "Privacy protection image",
-				url: "/privacy.jpg",
+				url: "https://unsplash.com/photos/two-women-facing-security-camera-above-mounted-on-structure-fPxOowbR6ls",
+			},
+			{	
+				label: "Quiz and assessment image",
+				url: "https://unsplash.com/photos/person-writing-on-white-paper-qDgTQOYk6B8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
 			},
 		],
 		credits: [
-			"Algorithms: Photo by Markus Spiske on Unsplash",
-			"Misinformation: Photo by Jorge Franganillo on Unsplash", 
-			"Mental Health: Photo by Pier Monzon on Unsplash",
-			"Privacy: Photo by Matthew Henry on Unsplash",
-			"Digital Balance: Photo by Jeremy Thomas on Unsplash"
+			'Algorithms: Photo by <a href="https://unsplash.com/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a> on <a href="https://unsplash.com/photos/matrix-movie-still-iar-afB0QQw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+			'Misinformation: Photo by <a href="https://unsplash.com/@franganillo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jorge Franganillo</a> on <a href="https://unsplash.com/photos/a-blue-typewriter-sitting-on-top-of-a-desk-next-to-a-tv-34zq7tzqRSw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+			'Mental Health: Photo by <a href="https://unsplash.com/@piermonzon?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pier Monzon</a> on <a href="https://unsplash.com/photos/man-in-yellow-and-black-crew-neck-shirt-1sfwsVpe34A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+			'Privacy: Photo by <a href="https://unsplash.com/@matthewhenry?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew Henry</a> on <a href="https://unsplash.com/photos/two-women-facing-security-camera-above-mounted-on-structure-fPxOowbR6ls?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+			'Digital Balance: Photo by <a href="https://unsplash.com/@jeremythomasphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Thomas</a> on <a href="https://unsplash.com/photos/stack-rock-on-seashore-FO7bKvgETgQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>',
+			'Quiz: Photo by <a href="https://unsplash.com/@nguyendhn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nguyen Dang Hoang Nhu</a> on <a href="https://unsplash.com/photos/person-writing-on-white-paper-qDgTQOYk6B8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 		]
 	},
 ];
@@ -164,7 +169,7 @@ const Sources = () => (
 									<h4 className="font-semibold mb-2 text-sm">Photo Credits:</h4>
 									<ul className="space-y-1 text-xs text-muted-foreground">
 										{src.credits.map((credit, i) => (
-											<li key={i}>{credit}</li>
+											<li key={i} dangerouslySetInnerHTML={{ __html: credit }} />
 										))}
 									</ul>
 								</div>
