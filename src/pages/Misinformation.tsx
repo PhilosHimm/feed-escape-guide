@@ -11,11 +11,22 @@ const Misinformation = () => (
     <div className="max-w-4xl mx-auto space-y-8">
       <div className="space-y-4">
         <TypographyH1>🎭 Misinformation: Navigating the Complex Digital Information Landscape</TypographyH1>
-        <TypographyP className="text-xl">
-          Your feed might trap you in a filter bubble, only showing content what you already believe. This creates echo chambers where the information you hear is similar to your opinion. Both echo chambers and fake news can trick anyone. 
-          
-          It's important to sharpen and navigate those skills through the complex landscapes of information. Think you can spot the difference between fact and fiction? Test your skills with our quiz below:
-        </TypographyP>
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <TypographyP className="text-xl">
+              Your feed might trap you in a filter bubble, only showing content what you already believe. This creates echo chambers where the information you hear is similar to your opinion. Both echo chambers and fake news can trick anyone. 
+              
+              It's important to sharpen and navigate those skills through the complex landscapes of information. Think you can spot the difference between fact and fiction? Test your skills with our quiz below:
+            </TypographyP>
+          </div>
+          <div className="flex justify-center">
+            <img 
+              src="/misinformation.jpg" 
+              alt="Misinformation awareness and digital literacy" 
+              className="rounded-lg shadow-md max-w-full h-auto"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Problem Overview */}

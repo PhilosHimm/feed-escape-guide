@@ -16,9 +16,20 @@ const MentalHealth = () => {
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="text-center space-y-4">
           <TypographyH1>🧠 Mental Health: The Foundation of Digital Wellness</TypographyH1>
-          <TypographyP className="text-xl max-w-3xl mx-auto">
-            The digital environment offers incredible affordances, but it also comes with accompanying burdens. Access to an unimaginable wealth of information online comes at a cost, making it fundamental to understand and navigate challenges such as disinformation, polarization, filter bubbles, and the impact of social media on mental health.
-          </TypographyP>
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
+            <div>
+              <TypographyP className="text-xl text-left">
+                The digital environment offers incredible affordances, but it also comes with accompanying burdens. Access to an unimaginable wealth of information online comes at a cost, making it fundamental to understand and navigate challenges such as disinformation, polarization, filter bubbles, and the impact of social media on mental health.
+              </TypographyP>
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="/mental-health.jpg" 
+                alt="Mental health support and digital wellness" 
+                className="rounded-lg shadow-md max-w-full h-auto"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Research-Based Evidence */}

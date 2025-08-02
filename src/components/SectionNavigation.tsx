@@ -28,12 +28,18 @@ export function SectionNavigation({ currentPath, className }: SectionNavigationP
   const prevSection = currentIndex > 0 ? sectionOrder[currentIndex - 1] : null;
   const nextSection = currentIndex < sectionOrder.length - 1 ? sectionOrder[currentIndex + 1] : null;
 
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    // Scroll to top after navigation
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className={`flex justify-between items-center pt-8 border-t ${className}`}>
       {prevSection ? (
         <Button
           variant="outline"
-          onClick={() => navigate(prevSection.path)}
+          onClick={() => handleNavigation(prevSection.path)}
           className="flex items-center gap-2"
         >
           <ArrowLeft className="h-4 w-4" />
@@ -45,7 +51,7 @@ export function SectionNavigation({ currentPath, className }: SectionNavigationP
 
       {nextSection && (
         <Button
-          onClick={() => navigate(nextSection.path)}
+          onClick={() => handleNavigation(nextSection.path)}
           className="flex items-center gap-2"
         >
           {nextSection.label}

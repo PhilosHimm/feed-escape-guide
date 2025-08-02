@@ -11,9 +11,20 @@ const Privacy = () => (
     <div className="max-w-4xl mx-auto space-y-8">
       <div className="space-y-4">
         <TypographyH1>🔒 Privacy: Protecting Your Digital Self</TypographyH1>
-        <TypographyP className="text-xl">
-          Every click, every like, and every scroll builds your digital profile. It's like an invisible personality created by companies tracking your interest, habits, even mood, shaping the ads you see and the content you're shown. See how tracking works, then learn how you can reclaim control.
-        </TypographyP>
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <TypographyP className="text-xl">
+              Every click, every like, and every scroll builds your digital profile. It's like an invisible personality created by companies tracking your interest, habits, even mood, shaping the ads you see and the content you're shown. See how tracking works, then learn how you can reclaim control.
+            </TypographyP>
+          </div>
+          <div className="flex justify-center">
+            <img 
+              src="/privacy.jpg" 
+              alt="Privacy protection and digital security" 
+              className="rounded-lg shadow-md max-w-full h-auto"
+            />
+          </div>
+        </div>
         <Alert className="bg-red-50 border-red-200">
           <AlertTriangle className="h-4 w-4" />
           <AlertDescription>

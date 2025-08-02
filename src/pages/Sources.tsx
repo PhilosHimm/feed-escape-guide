@@ -134,9 +134,20 @@ const Sources = () => (
 		<div className="max-w-4xl mx-auto space-y-8">
 			<div className="space-y-4">
 				<TypographyH1>Sources & Research Citations</TypographyH1>
-				<TypographySmall className="text-muted-foreground">
-					Our digital wellness guide is built on evidence-based research from credible academic institutions, peer-reviewed studies, and established organizations. Each module draws from authoritative sources to ensure accurate, helpful information that supports healthy technology relationships and digital literacy.
-				</TypographySmall>
+				<div className="grid md:grid-cols-2 gap-8 items-center">
+					<div>
+						<TypographySmall className="text-muted-foreground">
+							Our digital wellness guide is built on evidence-based research from credible academic institutions, peer-reviewed studies, and established organizations. Each module draws from authoritative sources to ensure accurate, helpful information that supports healthy technology relationships and digital literacy.
+						</TypographySmall>
+					</div>
+					<div className="flex justify-center">
+						<img 
+							src="/quiz.jpg" 
+							alt="Research materials and resources" 
+							className="rounded-lg shadow-md max-w-full h-auto"
+						/>
+					</div>
+				</div>
 			</div>
 
 			<div className="grid gap-6">

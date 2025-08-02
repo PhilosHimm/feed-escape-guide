@@ -11,9 +11,20 @@ const DigitalBalance = () => (
     <div className="max-w-4xl mx-auto space-y-8">
       <div className="space-y-4">
         <TypographyH1>⚖️ Digital Balance: Finding Your Equilibrium</TypographyH1>
-        <TypographyP className="text-xl">
-          Digital balance is more than just avoiding the internet, it's about intention. It is consciously choosing how and when you engage, so your devices empower you, rather than drain you. Ready to reclaim your focus and time? Try these tools, rate your favorites, and experiment with practical strategies!
-        </TypographyP>
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <TypographyP className="text-xl">
+              Digital balance is more than just avoiding the internet, it's about intention. It is consciously choosing how and when you engage, so your devices empower you, rather than drain you. Ready to reclaim your focus and time? Try these tools, rate your favorites, and experiment with practical strategies!
+            </TypographyP>
+          </div>
+          <div className="flex justify-center">
+            <img 
+              src="/digital-balance.jpg" 
+              alt="Digital balance and equilibrium concept" 
+              className="rounded-lg shadow-md max-w-full h-auto"
+            />
+          </div>
+        </div>
         <Alert className="bg-green-50 border-green-200">
           <Scale className="h-4 w-4" />
           <AlertDescription>

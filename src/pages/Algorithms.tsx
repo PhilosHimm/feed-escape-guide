@@ -12,9 +12,20 @@ const Algorithms = () => {
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center space-y-4">
           <TypographyH1>🤖 Understanding Algorithms for Digital Wellness</TypographyH1>
-          <TypographyP className="text-xl max-w-4xl mx-auto">
-            Algorithms aren’t just doing their thing randomly, they’ve got goals, like keeping you hooked on content (so companies make more revenue from ads), boosting product sales, or making a service run smoother. They do this by analyzing humongous amounts of data, like Big Data level huge. That means tons of information coming in fast, from all kinds of sources, being crunched to figure out what grabs your attention. 
-          </TypographyP>
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
+            <div>
+              <TypographyP className="text-xl text-left">
+                Algorithms aren't just doing their thing randomly, they've got goals, like keeping you hooked on content (so companies make more revenue from ads), boosting product sales, or making a service run smoother. They do this by analyzing humongous amounts of data, like Big Data level huge. That means tons of information coming in fast, from all kinds of sources, being crunched to figure out what grabs your attention. 
+              </TypographyP>
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="/algorithms.jpg" 
+                alt="Algorithm visualization with matrix-style code" 
+                className="rounded-lg shadow-md max-w-full h-auto"
+              />
+            </div>
+          </div>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-3xl mx-auto">
             <TypographyP className="text-sm">
               <strong>Digital Wellness Connection:</strong> A narrow, sensational content diet can increase stress and contribute to misinformation-driven anxiety. Learning about algorithms helps you diversify your feeds and reduce mental health impacts.
