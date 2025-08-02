@@ -91,29 +91,36 @@ const sources = [
 	},
 	{
 		category: "Visual Resources",
-		desc: "Images and graphics used under Creative Commons licensing:",
+		desc: "Images and graphics used in this digital wellness guide:",
 		links: [
 			{
-				label: "Photo by Agê Barros (digital wellness)",
-				url: "https://unsplash.com/photos/photo-1488590528505-98d2b5aba04b",
+				label: "Digital wellness concept image",
+				url: "/digital-wellness.jpg",
 			},
 			{
-				label: "Photo by Vishnu Mohanan (algorithms)",
-				url: "https://unsplash.com/photos/photo-1518770660439-4636190af475",
+				label: "Algorithm visualization image",
+				url: "/algorithms.jpg",
 			},
 			{
-				label: "Photo by Chris Ried (misinformation)",
-				url: "https://unsplash.com/photos/photo-1487058792275-0ad4aaf24ca7",
+				label: "Misinformation awareness image",
+				url: "/misinformation.jpg",
 			},
 			{
-				label: "Photo by Marvin Meyer (mental health)",
-				url: "https://unsplash.com/photos/photo-1605810230434-7631ac76ec81",
+				label: "Mental health support image",
+				url: "/mental-health.jpg",
 			},
 			{
-				label: "Photo by Markus Spiske (privacy)",
-				url: "https://unsplash.com/photos/photo-1526374965328-7f61d4dc18c5",
+				label: "Privacy protection image",
+				url: "/privacy.jpg",
 			},
 		],
+		credits: [
+			"Algorithms: Photo by Markus Spiske on Unsplash",
+			"Misinformation: Photo by Jorge Franganillo on Unsplash", 
+			"Mental Health: Photo by Pier Monzon on Unsplash",
+			"Privacy: Photo by Matthew Henry on Unsplash",
+			"Digital Balance: Photo by Jeremy Thomas on Unsplash"
+		]
 	},
 ];
 
@@ -152,6 +159,16 @@ const Sources = () => (
 									</li>
 								))}
 							</ul>
+							{src.credits && (
+								<div className="mt-4 pt-4 border-t">
+									<h4 className="font-semibold mb-2 text-sm">Photo Credits:</h4>
+									<ul className="space-y-1 text-xs text-muted-foreground">
+										{src.credits.map((credit, i) => (
+											<li key={i}>{credit}</li>
+										))}
+									</ul>
+								</div>
+							)}
 						</CardContent>
 					</Card>
 				))}

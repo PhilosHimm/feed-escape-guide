@@ -13,37 +13,37 @@ const sections = [
     name: "How Algorithms Work",
     route: "/algorithms",
     description: "Understand how feeds are personalized and why breaking filter bubbles supports mental wellness.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+    image: "/algorithms.jpg",
   },
   {
     name: "Your Mental Health Online",
     route: "/mental-health",
     description: "Learn how social media affects your mood, sleep, and well-being and discover happiness hacks for healthier usage.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=420&q=80",
+    image: "/mental-health.jpg",
   },
   {
     name: "Spotting Misinformation",
     route: "/misinformation",
     description: "Protect your peace of mind by learning to identify false information and reduce anxiety from information overload.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=420&q=80",
+    image: "/misinformation.jpg",
   },
   {
     name: "Privacy for Peace of Mind",
     route: "/privacy",
     description: "Feel secure online by understanding data collection and taking control of your personal information.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80",
+    image: "/privacy.jpg",
   },
   {
     name: "Digital Balance & Boundaries",
     route: "/digital-balance",
     description: "Build sustainable habits with screen time limits, offline activities, and digital detox strategies.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
+    image: "/digital-balance.jpg",
   },
   {
     name: "Digital Wellness Quiz",
     route: "/digital-navigator",
     description: "Test your digital literacy skills with interactive scenarios and measure your progress toward digital wellness mastery.",
-    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=400&q=80",
+    image: "/quiz.jpg",
   }
 ];
 
