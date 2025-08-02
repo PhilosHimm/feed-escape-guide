@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { SectionNavigation } from "@/components/SectionNavigation";
-import { Heart, AlertTriangle, CheckCircle } from "lucide-react";
+import { Heart, AlertTriangle, CheckCircle, ExternalLink } from "lucide-react";
 
 const MentalHealth = () => {
   const [mood, setMood] = useState(2);
@@ -420,6 +420,38 @@ const MentalHealth = () => {
                     <span className="bg-gray-100 px-3 py-1 rounded-full">#MentalHealthMemes</span>
                     <span className="bg-gray-100 px-3 py-1 rounded-full">#ScreenTimeStruggles</span>
                     <span className="bg-gray-100 px-3 py-1 rounded-full">#DigitalDetox</span>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Sources for Mental Health Module */}
+        <section>
+          <Card className="border-gray-200 bg-gray-50/50">
+            <CardContent className="pt-6">
+              <div className="space-y-4">
+                <h3 className="font-semibold text-lg flex items-center gap-2">
+                  <ExternalLink className="h-5 w-5" />
+                  Sources for Mental Health Module
+                </h3>
+                <div className="space-y-3 text-sm">
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">Research Studies:</h4>
+                    <ul className="space-y-1 ml-4">
+                      <li>• <a href="https://www.mhrc.ca/blog-research-brief/associations-between-social-media-use-personal-screen-time-and-mental-health-indicators-among-canadian-youth" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Mental Health Research Canada - Social Media Use and Mental Health Indicators Among Canadian Youth (2018)</a></li>
+                      <li>• American Psychological Association - Social Media Use and Mental Health Study (2024)</li>
+                      <li>• <a href="https://www.helpguide.org/articles/mental-health/social-media-and-mental-health.htm" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">HelpGuide.org - Social Media and Mental Health</a></li>
+                    </ul>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">Organizations & Resources:</h4>
+                    <ul className="space-y-1 ml-4">
+                      <li>• <a href="https://www.humanetech.com/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Center for Humane Technology</a></li>
+                      <li>• <a href="https://freedom.to/blog/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Freedom.to - Digital Addiction Research</a></li>
+                      <li>• <a href="https://partnershiponai.org/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Partnership on AI - Algorithmic Impact</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>

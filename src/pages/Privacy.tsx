@@ -1,6 +1,6 @@
 import React from "react";
 import TrackingSimulator from "../components/TrackingSimulator";
-import { Shield, Lock, AlertTriangle, Eye, CheckCircle, Database, Globe } from "lucide-react";
+import { Shield, Lock, AlertTriangle, Eye, CheckCircle, Database, Globe, ExternalLink } from "lucide-react";
 import { TypographyH1, TypographyH2, TypographyP } from "@/components/ui/typography";
 import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -388,6 +388,55 @@ const Privacy = () => (
           Sources: NYM.com research on data brokers, PIPEDA documentation, cybersecurity best practices, and digital privacy frameworks
         </TypographyP>
       </div>
+
+      {/* Sources for Privacy Module */}
+      <section>
+        <Card className="border-gray-200 bg-gray-50/50">
+          <CardContent className="pt-6">
+            <div className="space-y-4">
+              <h3 className="font-semibold text-lg flex items-center gap-2">
+                <ExternalLink className="h-5 w-5" />
+                Sources for Privacy Module
+              </h3>
+              <div className="space-y-3 text-sm">
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Privacy Research & Organizations:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• <a href="https://nymity.ch/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">NYM.com - Data Broker Research</a></li>
+                    <li>• <a href="https://www.eff.org/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Electronic Frontier Foundation</a></li>
+                    <li>• <a href="https://foundation.mozilla.org/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Mozilla Foundation - Internet Health</a></li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Privacy Tools & Protection:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• <a href="https://privacybadger.org" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Privacy Badger - Tracking Protection</a></li>
+                    <li>• Password manager research (LastPass, Bitwarden security studies)</li>
+                    <li>• VPN and encryption technology documentation</li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Legal & Regulatory:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• PIPEDA (Personal Information Protection and Electronic Documents Act)</li>
+                    <li>• GDPR (General Data Protection Regulation) documentation</li>
+                    <li>• Platform privacy policy analysis and research</li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Data Collection Studies:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• HTML cookies and tracking technology research</li>
+                    <li>• Cross-device tracking studies</li>
+                    <li>• IoT (Internet of Things) privacy research</li>
+                    <li>• Data broker ecosystem analysis</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
 
       <SectionNavigation currentPath="/privacy" />
     </div>

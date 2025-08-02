@@ -4,7 +4,7 @@ import { TypographyH1, TypographyH2, TypographyP } from "@/components/ui/typogra
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionNavigation } from "@/components/SectionNavigation";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Search, Eye, CheckCircle, AlertTriangle, Shield } from "lucide-react";
+import { Search, Eye, CheckCircle, AlertTriangle, Shield, ExternalLink } from "lucide-react";
 
 const Misinformation = () => (
   <div className="container mx-auto py-8 px-4">
@@ -329,6 +329,47 @@ const Misinformation = () => (
         <span>·</span>
         <a href="https://humanetech.com" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">Center for Humane Technology</a>
       </div>
+
+      {/* Sources for Misinformation Module */}
+      <section>
+        <Card className="border-gray-200 bg-gray-50/50">
+          <CardContent className="pt-6">
+            <div className="space-y-4">
+              <h3 className="font-semibold text-lg flex items-center gap-2">
+                <ExternalLink className="h-5 w-5" />
+                Sources for Misinformation Module
+              </h3>
+              <div className="space-y-3 text-sm">
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Fact-Checking Organizations:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• <a href="https://snopes.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Snopes - Comprehensive Fact-Checking</a></li>
+                    <li>• <a href="https://politifact.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">PolitiFact - Political Claim Verification</a></li>
+                    <li>• <a href="https://factcheck.org" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">FactCheck.org - Nonpartisan Fact-Checking</a></li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Digital Literacy Resources:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• <a href="https://mediasmarts.ca" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">MediaSmarts Canada</a></li>
+                    <li>• <a href="https://newslit.org" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">News Literacy Project</a></li>
+                    <li>• <a href="https://firstdraftnews.org" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">First Draft - Misinformation Research</a></li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Research & Technology:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• <a href="https://humanetech.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Center for Humane Technology</a></li>
+                    <li>• Cathy O'Neil - Algorithmic bias research</li>
+                    <li>• MIT resources on deepfake detection</li>
+                    <li>• Generative AI and Large Language Model studies</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
 
       <SectionNavigation currentPath="/misinformation" />
     </div>

@@ -4,7 +4,7 @@ import { TypographyH1, TypographyH2, TypographyP } from "@/components/ui/typogra
 import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { SectionNavigation } from "@/components/SectionNavigation";
-import { CheckCircle, AlertTriangle } from "lucide-react";
+import { CheckCircle, AlertTriangle, ExternalLink } from "lucide-react";
 
 const Algorithms = () => {
   return (
@@ -473,6 +473,46 @@ const Algorithms = () => {
                   <div>
                     <strong>Mozilla Foundation</strong>
                     <p className="text-xs">Internet health and digital rights advocacy</p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Sources for Algorithms Module */}
+        <section>
+          <Card className="border-gray-200 bg-gray-50/50">
+            <CardContent className="pt-6">
+              <div className="space-y-4">
+                <h3 className="font-semibold text-lg flex items-center gap-2">
+                  <ExternalLink className="h-5 w-5" />
+                  Sources for Algorithms Module
+                </h3>
+                <div className="space-y-3 text-sm">
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">Algorithm Research:</h4>
+                    <ul className="space-y-1 ml-4">
+                      <li>• <a href="https://fondationdescartes.org/en/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Fondation Descartes - Filter Bubble and Recommender Systems Research</a></li>
+                      <li>• <a href="https://www.thefilterbubble.com/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Eli Pariser - The Filter Bubble</a></li>
+                      <li>• Cathy O'Neil - "Weapons of Math Destruction" research on algorithmic bias</li>
+                    </ul>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">Attention Economy & Design:</h4>
+                    <ul className="space-y-1 ml-4">
+                      <li>• <a href="https://www.humanetech.com/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Center for Humane Technology - Tristan Harris research</a></li>
+                      <li>• <a href="https://partnershiponai.org/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Partnership on AI - Engagement Optimization Studies</a></li>
+                      <li>• Sean Parker - Facebook social-validation feedback loop statements</li>
+                    </ul>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">Platform-Specific Research:</h4>
+                    <ul className="space-y-1 ml-4">
+                      <li>• Official platform algorithm documentation (Meta, Google, Twitter/X)</li>
+                      <li>• Academic studies on platform-specific engagement patterns</li>
+                      <li>• Big Data and Machine Learning research papers</li>
+                    </ul>
                   </div>
                 </div>
               </div>

@@ -4,7 +4,7 @@ import { TypographyH1, TypographyH2, TypographyP } from "@/components/ui/typogra
 import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { SectionNavigation } from "@/components/SectionNavigation";
-import { Clock, Target, Scale, Shield, Brain, Users, Smartphone, CheckCircle } from "lucide-react";
+import { Clock, Target, Scale, Shield, Brain, Users, Smartphone, CheckCircle, ExternalLink } from "lucide-react";
 
 const DigitalBalance = () => (
   <div className="container mx-auto py-8 px-4">
@@ -388,6 +388,56 @@ const DigitalBalance = () => (
           <strong>Remember:</strong> Building healthy digital habits is a game of small wins. Focus on sustainable changes rather than dramatic overhauls. What will your first small win be?
         </AlertDescription>
       </Alert>
+
+      {/* Sources for Digital Balance Module */}
+      <section>
+        <Card className="border-gray-200 bg-gray-50/50">
+          <CardContent className="pt-6">
+            <div className="space-y-4">
+              <h3 className="font-semibold text-lg flex items-center gap-2">
+                <ExternalLink className="h-5 w-5" />
+                Sources for Digital Balance Module
+              </h3>
+              <div className="space-y-3 text-sm">
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Course Materials:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• <a href="https://www.humane.tech/module4" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Stolen Focus by Johann Hari (Course Reading)</a></li>
+                    <li>• <a href="https://www.humane.tech/module5" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Course Module 5 - Digital Wellness</a></li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Digital Wellness Tools:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• <a href="https://forestapp.cc/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Forest App</a></li>
+                    <li>• <a href="https://screenzen.io/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">ScreenZen</a></li>
+                    <li>• <a href="https://rescuetime.com/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">RescueTime</a></li>
+                    <li>• iOS Screen Time and Android Digital Wellbeing documentation</li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Research & Studies:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• <a href="https://www.humanetech.com/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Center for Humane Technology - Attention Economy Research</a></li>
+                    <li>• Digital wellness and mental health correlation studies</li>
+                    <li>• Screen time impact research</li>
+                    <li>• Sleep and blue light studies</li>
+                  </ul>
+                </div>
+                <div className="space-y-2">
+                  <h4 className="font-semibold">Behavioral Science:</h4>
+                  <ul className="space-y-1 ml-4">
+                    <li>• Habit formation and behavior change research</li>
+                    <li>• Digital minimalism studies</li>
+                    <li>• Mindfulness and technology integration research</li>
+                    <li>• 20/20/20 rule and eye health studies</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
 
       <SectionNavigation currentPath="/digital-balance" />
     </div>
