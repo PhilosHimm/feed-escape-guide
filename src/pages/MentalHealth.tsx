@@ -6,9 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { SectionNavigation } from "@/components/SectionNavigation";
-import { Download, Heart, AlertTriangle, CheckCircle } from "lucide-react";
-
-const wallpaperUrl = "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?auto=format&fit=crop&w=480&q=80";
+import { Heart, AlertTriangle, CheckCircle } from "lucide-react";
 
 const MentalHealth = () => {
   const [mood, setMood] = useState(2);
@@ -35,14 +33,15 @@ const MentalHealth = () => {
                 <div className="space-y-6">
                   <div>
                     <TypographyP className="mb-4">
-                      Research conducted in Canada in 2018 identified six mental health issues connected to social media use: lost sleep, difficulties concentrating, physical inertia, anxiety/depression, frustration/anger, and becoming envious of others. Between 12% and 22% of all users reported that social media exacerbated one of these factors in the last 12 months, with these numbers being higher among younger users.
+                      A Canadian study from 2018 found that social media use is associated with six major mental health concerns: poor sleep, trouble concentrating, lack of physical activity, anxiety or depression, irritability, and feeling jealous of others.
+                      Between 12% and 22% of users said social media had made at least one of these issues worse in the past year, and younger users were the most affected.
                     </TypographyP>
                   </div>
                   
                   <Alert className="bg-red-100 border-red-300">
                     <AlertTriangle className="h-4 w-4" />
                     <AlertDescription>
-                      <strong>2024 American Psychology Association Study:</strong> 41% of US teens with the highest social media use rated their mental health as poor or very poor, in contrast to 23% in the lowest use bracket. The average time spent on social media by an American teen was 4.8 hours per day.
+                      <strong>2024 American Psychological Association Study:</strong> 41% of U.S. teens who used social media the most reported having poor or very poor mental health, almost double the rate of those who used it the least (23%). On average, American teens were spending about 4.8 hours a day on social platforms.
                     </AlertDescription>
                   </Alert>
 
@@ -82,8 +81,11 @@ const MentalHealth = () => {
                   <TypographyH2 className="text-orange-800">Did you know?</TypographyH2>
                 </div>
                 <TypographyP className="text-orange-900">
-                  Scrolling through idyllic vacation pictures, smiling faces, and new puppies on social media can induce users to make unfortunate comparisons between their own lives and the perceived happiness of others. This constant comparison, combined with FOMO and exposure to curated realities, can significantly impact mental health and self-esteem.
+                  Heavy social media use is linked to emotional ups and downs - to increased rates of anxiety, depression, and psychological distress especially among younger teens. The constant comparison, fear of missing out (FOMO), and exposure to realities can take a toll. But, small consistent steps can build resilience and self-compassion online.
                 </TypographyP>
+                <div className="text-xs text-orange-700 mt-3">
+                  <strong>Reference:</strong> <a href="https://www.mhrc.ca/blog-research-brief/associations-between-social-media-use-personal-screen-time-and-mental-health-indicators-among-canadian-youth" className="underline hover:text-orange-900" target="_blank" rel="noopener noreferrer">Mental Health Research Canada - Social Media Use and Mental Health Indicators Among Canadian Youth</a>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -123,17 +125,17 @@ const MentalHealth = () => {
                 </div>
                 
                 <TypographyP>
-                  Social media interfaces are consciously designed to induce a sense of compulsion and exploit human evolutionary psychology. Understanding these mechanisms helps you recognize when you're being manipulated.
+                  Social media platforms are purposely built to keep you hooked, using tricks that tap into how our brains work. Knowing these tactics helps you spot when you're being pulled in.
                 </TypographyP>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-4">
-                    <h4 className="font-semibold">Design Features That Hook You</h4>
+                    <h4 className="font-semibold">Design Features That Keep You Scrolling</h4>
                     <ul className="space-y-2 text-sm">
-                      <li>• <strong>Infinite scroll:</strong> Newsfeeds never end, compelling users to stay longer</li>
-                      <li>• <strong>Automatic play:</strong> YouTube and Netflix keep content flowing</li>
-                      <li>• <strong>Flickering ellipsis:</strong> WhatsApp typing indicators create anticipation</li>
-                      <li>• <strong>Intermittent reinforcements:</strong> Like slot machines, unpredictable rewards</li>
+                      <li>• <strong>Infinite scroll:</strong> Your feed never ends, so it's hard to stop</li>
+                      <li>• <strong>Auto-play:</strong> Videos play one after another without pause</li>
+                      <li>• <strong>Typing indicators:</strong> That little "..." on WhatsApp keeps you waiting</li>
+                      <li>• <strong>Random rewards:</strong> Likes and notifications pop up unpredictably, like a slot machine</li>
                     </ul>
                   </div>
                   
@@ -212,46 +214,48 @@ const MentalHealth = () => {
               <div className="space-y-6">
                 <div className="flex items-center gap-2 mb-4">
                   <CheckCircle className="h-5 w-5 text-green-600" />
-                  <TypographyH2 className="text-green-800">Evidence-Based Happiness Hacks</TypographyH2>
+                  <TypographyH2 className="text-green-800">Survival Guide: How to Survive the Internet without losing your mind</TypographyH2>
                 </div>
                 <TypographyP>
-                  Several practical tips and strategies are recommended to mitigate the negative impacts of social media on mental health:
+                  Digital Wellness Toolkit - Here are some real-deal tips to help you dodge the downsides of social media and keep your mental health in check:
                 </TypographyP>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-4">
-                    <h4 className="font-semibold">Sleep & Screen Management</h4>
+                    <h4 className="font-semibold">Curate Your Feed</h4>
+                    <TypographyP className="text-sm mb-2">
+                      Take charge of what you see, your feed should lift you up.
+                    </TypographyP>
                     <ul className="space-y-2 text-sm">
-                      <li>• Avoid screens in the hour before bed</li>
-                      <li>• Apply blue light filters or use greyscale at nighttime</li>
-                      <li>• Turn off notifications and alerts</li>
-                      <li>• Remove unnecessary apps from your home screen or phone</li>
+                      <li>• Actively unfollow, block, or mute accounts that makes you uncomfortable (click the not interested button)</li>
+                      <li>• <strong>Pro Tip:</strong> Follow Accounts that inspire you, teach you something new, make you laugh or spreading positivity</li>
                     </ul>
                     
-                    <h4 className="font-semibold">Digital Boundaries</h4>
+                    <h4 className="font-semibold">Set Boundaries</h4>
+                    <TypographyP className="text-sm mb-2">
+                      Create rules to minimize screen time and stick to them. Think of them as healthy defenses around your digital life.
+                    </TypographyP>
                     <ul className="space-y-2 text-sm">
-                      <li>• Use Airplane mode when concentration is required</li>
-                      <li>• Actively unplug: avoid phones at dinner table</li>
-                      <li>• Don't bring phones on outdoor activities like dog walks</li>
-                      <li>• Utilize screen time tracking apps (ScreenTime, Digital Wellbeing)</li>
+                      <li>• Use your phones built in screen time (iOS) or "Digital Well-being" (Android) features to set daily limits on apps you tend to overuse or want to cut back on</li>
+                      <li>• Designate no phone zones (no phones at the dinner table or 30 minutes before bed)</li>
+                      <li>• <strong>Pro Tip:</strong> Follow the 20/20/20 Rule - for every 20 minutes of screen time, look at something 20 feet away for 20 seconds</li>
                     </ul>
                   </div>
                   
                   <div className="space-y-4">
-                    <h4 className="font-semibold">Mindful Consumption</h4>
+                    <h4 className="font-semibold">Be Mindful When You Scroll</h4>
                     <ul className="space-y-2 text-sm">
-                      <li>• Remember people display only their "best selves" online</li>
-                      <li>• No one's life consists of "unalloyed happiness"</li>
-                      <li>• Treat digital media like food: meaningful connection is "healthy"</li>
-                      <li>• Mindless scrolling is "junk" - consume intentionally</li>
+                      <li>• Pay attention to how you feel while you're using social media</li>
                     </ul>
                     
-                    <h4 className="font-semibold">Reality Check</h4>
+                    <h4 className="font-semibold">Prioritize Real Life Connections</h4>
+                    <TypographyP className="text-sm mb-2">
+                      The digital world is cool but be sure to make time for your close friends and family as that connection is irreplaceable.
+                    </TypographyP>
                     <ul className="space-y-2 text-sm">
-                      <li>• Recognize curated online personas vs. reality</li>
-                      <li>• Focus on quality connections over quantity</li>
-                      <li>• Prioritize useful information over entertainment</li>
-                      <li>• Schedule regular offline activities and hobbies</li>
+                      <li>• <strong>In-Person hang outs:</strong> Make time for face-to-face interactions with friends and family</li>
+                      <li>• <strong>Hobbies and Interests:</strong> Pick up a hobby or even a new skill that interests you - drawing, playing an instrument, sports, reading, baking, walking in nature</li>
+                      <li>• <strong>Sleep matters:</strong> prioritize your well-being and getting enough rest as it impacts how your day would look like, your mood, and ability to cope with stress</li>
                     </ul>
                   </div>
                 </div>
@@ -259,7 +263,7 @@ const MentalHealth = () => {
                 <Alert className="bg-green-100 border-green-300">
                   <CheckCircle className="h-4 w-4" />
                   <AlertDescription>
-                    <strong>Evidence-Based Tip:</strong> Studies show that treating digital media consumption like food - focusing on "nutritious" content (meaningful connections, useful information) while limiting "junk" (mindless scrolling) - significantly improves mental well-being.
+                    <strong>Science Says:</strong> Treating your digital diet like real food, focusing on nutritious, meaningful content and cutting back on junk can effectively boost your mental well-being.
                   </AlertDescription>
                 </Alert>
               </div>
@@ -278,27 +282,27 @@ const MentalHealth = () => {
                 </div>
                 
                 <TypographyP>
-                  Digital resilience involves understanding social media's design, applying "happiness hacks" to gain control, and developing self-awareness about your digital interactions. This aligns with critical thinking strategies that encourage you to "think through" initial emotional reactions before acting on or sharing content.
+                  Digital resilience means understanding how social media is designed to affect you, using smart "happiness hacks" to take back control, and becoming more aware of how your digital habits impact your emotions and thinking. It's all about slowing down and thinking critically before reacting or sharing online.
                 </TypographyP>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-4">
-                    <h4 className="font-semibold">Self-Awareness Strategies</h4>
+                    <h4 className="font-semibold">Self-Awareness Tips</h4>
                     <ul className="space-y-2 text-sm">
-                      <li>• Monitor your emotional state after social media use</li>
-                      <li>• Recognize when content triggers strong emotions</li>
-                      <li>• Pause before reacting to or sharing emotional content</li>
-                      <li>• Practice critical thinking about information sources</li>
+                      <li>• Check in with how you feel after scrolling</li>
+                      <li>• Notice when certain posts trigger strong emotions or feels</li>
+                      <li>• Pause and think before liking, commenting, or sharing heated content</li>
+                      <li>• Question where the info is coming from: be a fact-checker</li>
                     </ul>
                   </div>
                   
                   <div className="space-y-4">
-                    <h4 className="font-semibold">Intentional Technology Use</h4>
+                    <h4 className="font-semibold">Intentional Tech Use</h4>
                     <ul className="space-y-2 text-sm">
-                      <li>• Set specific purposes for social media sessions</li>
-                      <li>• Create time boundaries for digital consumption</li>
-                      <li>• Choose quality connections over passive scrolling</li>
-                      <li>• Regular digital detox periods for mental reset</li>
+                      <li>• Have a clear goal when you open social media</li>
+                      <li>• Set limits on how long you spend online</li>
+                      <li>• Focus on meaningful connections, not just mindless scrolling</li>
+                      <li>• Take regular breaks from screens to recharge</li>
                     </ul>
                   </div>
                 </div>
@@ -306,7 +310,7 @@ const MentalHealth = () => {
                 <Alert className="bg-blue-100 border-blue-300">
                   <AlertTriangle className="h-4 w-4" />
                   <AlertDescription>
-                    <strong>Remember:</strong> Disinformation is often designed to trigger intense emotional responses that bypass rational thought. Building digital resilience helps you maintain critical thinking and emotional stability online.
+                    <strong>Heads up:</strong> Misinformation is often made to spark big emotional reactions and bypass your logical thinking. Building digital resilience helps you stay calm, think clearly, and avoid getting caught up in the drama.
                   </AlertDescription>
                 </Alert>
               </div>
@@ -324,42 +328,98 @@ const MentalHealth = () => {
                   <TypographyH2 className="text-yellow-800">When to Seek Additional Support</TypographyH2>
                 </div>
                 <TypographyP className="text-yellow-900">
-                  While digital wellness strategies can significantly improve mental health, some situations may benefit from professional support. If social media use is significantly impacting your daily life, relationships, sleep, or overall well-being, consider speaking with a mental health professional who can provide personalized guidance and support.
+                  If social media is seriously affecting your mood, relationships, sleep, or daily life, it's advisable and smart to talk to a mental health professional. Getting help is a strength, not a weakness.
                 </TypographyP>
                 <TypographyP className="text-sm text-yellow-800">
-                  <strong>Remember:</strong> Seeking help is a sign of strength and self-awareness, not weakness.
+                  <strong>When to Get Extra Help:</strong> Seeking help is a sign of strength and self-awareness, not weakness.
                 </TypographyP>
               </div>
             </CardContent>
           </Card>
         </section>
 
-        {/* Downloadable Resource */}
+        {/* Wellness Meme Gallery */}
         <section>
           <Card>
             <CardContent className="pt-6">
-              <div className="flex flex-col md:flex-row gap-6 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=420&q=80"
-                  alt="Daily digital wellness reminder"
-                  className="rounded-lg border max-w-sm"
-                />
-                <div className="flex-1 space-y-4">
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">Daily Wellness Reminder</h3>
-                    <TypographyP className="text-sm mb-4">
-                      Download this wallpaper as a daily reminder to check in with your mental health and practice digital wellness.
+              <div className="space-y-6">
+                <div className="text-center space-y-4">
+                  <div className="flex items-center justify-center gap-2">
+                    <span className="text-2xl">😂</span>
+                    <h3 className="font-semibold text-lg">Wellness Meme Gallery</h3>
+                    <span className="text-2xl">🧠</span>
+                  </div>
+                  <TypographyP className="text-sm max-w-2xl mx-auto">
+                    A curated gallery where students can submit and view mental health-themed memes. Promotes prosumer culture and meme creation, encouraging emotional expression through humor and creativity.
+                  </TypographyP>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div className="bg-blue-50 border-2 border-dashed border-blue-200 rounded-lg p-6 text-center">
+                    <div className="text-4xl mb-2">📱</div>
+                    <h4 className="font-semibold text-sm mb-2">Screen Time Struggles</h4>
+                    <TypographyP className="text-xs text-gray-600">
+                      "Me: I'll just check Instagram for 5 minutes"<br/>
+                      "Also me: 3 hours later..."
                     </TypographyP>
-                    <Button asChild>
-                      <a
-                        href={wallpaperUrl}
-                        download="digital-wellness-reminder.jpg"
-                        className="inline-flex items-center gap-2"
-                      >
-                        <Download className="h-4 w-4" />
-                        Download Wellness Reminder
-                      </a>
-                    </Button>
+                  </div>
+
+                  <div className="bg-green-50 border-2 border-dashed border-green-200 rounded-lg p-6 text-center">
+                    <div className="text-4xl mb-2">🧘</div>
+                    <h4 className="font-semibold text-sm mb-2">Digital Detox Vibes</h4>
+                    <TypographyP className="text-xs text-gray-600">
+                      "Phone: *exists*"<br/>
+                      "My focus: Aight, I'mma head out"
+                    </TypographyP>
+                  </div>
+
+                  <div className="bg-purple-50 border-2 border-dashed border-purple-200 rounded-lg p-6 text-center">
+                    <div className="text-4xl mb-2">😴</div>
+                    <h4 className="font-semibold text-sm mb-2">Sleep vs Social Media</h4>
+                    <TypographyP className="text-xs text-gray-600">
+                      "Brain at 11 PM: Time to sleep"<br/>
+                      "Brain at 2 AM: But did you see this TikTok?"
+                    </TypographyP>
+                  </div>
+
+                  <div className="bg-yellow-50 border-2 border-dashed border-yellow-200 rounded-lg p-6 text-center">
+                    <div className="text-4xl mb-2">🎭</div>
+                    <h4 className="font-semibold text-sm mb-2">Online vs Reality</h4>
+                    <TypographyP className="text-xs text-gray-600">
+                      "Instagram: Living my best life ✨"<br/>
+                      "Reality: Ate cereal for dinner again"
+                    </TypographyP>
+                  </div>
+
+                  <div className="bg-red-50 border-2 border-dashed border-red-200 rounded-lg p-6 text-center">
+                    <div className="text-4xl mb-2">🔄</div>
+                    <h4 className="font-semibold text-sm mb-2">Scroll Loop</h4>
+                    <TypographyP className="text-xs text-gray-600">
+                      "Refreshes feed"<br/>
+                      "Same posts"<br/>
+                      "Refreshes again anyway"
+                    </TypographyP>
+                  </div>
+
+                  <div className="bg-teal-50 border-2 border-dashed border-teal-200 rounded-lg p-6 text-center">
+                    <div className="text-4xl mb-2">💪</div>
+                    <h4 className="font-semibold text-sm mb-2">Digital Wellness Win</h4>
+                    <TypographyP className="text-xs text-gray-600">
+                      "Me: *puts phone in another room*"<br/>
+                      "Productivity: Allow me to introduce myself"
+                    </TypographyP>
+                  </div>
+                </div>
+
+                <div className="text-center space-y-4">
+                  <TypographyP className="text-sm text-gray-600">
+                    <strong>Create Your Own:</strong> Use humor to process your digital wellness journey! Memes help us laugh at shared struggles and build community around mental health awareness.
+                  </TypographyP>
+                  <div className="flex flex-wrap justify-center gap-2 text-xs">
+                    <span className="bg-gray-100 px-3 py-1 rounded-full">#DigitalWellness</span>
+                    <span className="bg-gray-100 px-3 py-1 rounded-full">#MentalHealthMemes</span>
+                    <span className="bg-gray-100 px-3 py-1 rounded-full">#ScreenTimeStruggles</span>
+                    <span className="bg-gray-100 px-3 py-1 rounded-full">#DigitalDetox</span>
                   </div>
                 </div>
               </div>

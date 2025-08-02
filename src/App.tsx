@@ -11,6 +11,7 @@ import Misinformation from "./pages/Misinformation";
 import MentalHealth from "./pages/MentalHealth";
 import Privacy from "./pages/Privacy";
 import DigitalBalance from "./pages/DigitalBalance";
+import DigitalNavigator from "./pages/DigitalNavigator";
 import About from "./pages/About";
 import Sources from "./pages/Sources";
 import NotFound from "./pages/NotFound";
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/mental-health" element={<MentalHealth />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/digital-balance" element={<DigitalBalance />} />
+          <Route path="/digital-navigator" element={<DigitalNavigator />} />
           <Route path="/about" element={<About />} />
           <Route path="/sources" element={<Sources />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -12,7 +12,7 @@ const DigitalBalance = () => (
       <div className="space-y-4">
         <TypographyH1>⚖️ Digital Balance: Finding Your Equilibrium</TypographyH1>
         <TypographyP className="text-xl">
-          Maintaining a healthy digital balance is crucial in an online environment where constant self-surveillance for "self-branding" can lead to tension and stress. While digital communication tools offer incredible opportunities, they also carry the burden of potential distraction and commodification of personal behavior.
+          Digital balance is more than just avoiding the internet, it's about intention. It is consciously choosing how and when you engage, so your devices empower you, rather than drain you. Ready to reclaim your focus and time? Try these tools, rate your favorites, and experiment with practical strategies!
         </TypographyP>
         <Alert className="bg-green-50 border-green-200">
           <Scale className="h-4 w-4" />
@@ -279,33 +279,31 @@ const DigitalBalance = () => (
             <div className="space-y-6">
               <div className="flex items-center gap-2 mb-4">
                 <Clock className="h-5 w-5 text-teal-600" />
-                <TypographyH2 className="text-teal-800">Digital Detox</TypographyH2>
+                <TypographyH2 className="text-teal-800">Challenge: Unplug and Discover</TypographyH2>
               </div>
               
-              <TypographyP>
-                The overarching strategy of "taking time to unplug" serves as a primary method for taking breaks from digital engagement:
-              </TypographyP>
+              <div className="space-y-6">
+                <div className="bg-teal-100 p-6 rounded-lg">
+                  <h4 className="font-semibold mb-3">24hr "Feed Detox"</h4>
+                  <TypographyP className="text-sm mb-3">
+                    Attempt a 24hr "feed detox" — can you spend a full day social-media free?
+                  </TypographyP>
+                  <TypographyP className="text-sm">
+                    Try and block your top distractions for a day and see what happens! Use your phones' built in limits or apps to stay strong. What did you gain?
+                  </TypographyP>
+                </div>
 
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-teal-100 p-4 rounded-lg text-center">
-                  <h4 className="font-semibold mb-2">Micro-Detoxes</h4>
-                  <TypographyP className="text-sm">
-                    Leave devices behind during specific activities or times of day
+                <div className="bg-teal-50 p-6 rounded-lg">
+                  <h4 className="font-semibold mb-3">Dive Deeper: The Attention Crisis</h4>
+                  <TypographyP className="text-sm mb-3">
+                    For a powerful look at why our focus is stolen, check out:
                   </TypographyP>
-                </div>
-                
-                <div className="bg-teal-100 p-4 rounded-lg text-center">
-                  <h4 className="font-semibold mb-2">Scheduled Breaks</h4>
                   <TypographyP className="text-sm">
-                    Conscious decisions to disconnect at regular intervals
+                    <strong>Stolen Focus by Johann Hari (Course Reading):</strong> This book explores how constant digital distractions, fueled by tech companies' agendas and designs, have fragmented our attention. Hari argues that our inability to focus isn't a personal failing, but a societal problem designed into our digital world. Understanding these can empower you to fight back more effectively.
                   </TypographyP>
-                </div>
-                
-                <div className="bg-teal-100 p-4 rounded-lg text-center">
-                  <h4 className="font-semibold mb-2">Activity-Based</h4>
-                  <TypographyP className="text-sm">
-                    Device-free meals, walks, and social gatherings
-                  </TypographyP>
+                  <div className="mt-3">
+                    <a href="https://www.humane.tech/module4" className="underline hover:text-primary text-sm" target="_blank" rel="noopener noreferrer">Learn More</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -377,10 +375,7 @@ const DigitalBalance = () => (
               <Target className="h-5 w-5 mt-1 text-primary" />
               <div className="space-y-3">
                 <div>
-                  <strong>24-Hour Challenge:</strong> Attempt a full day "feed detox"—can you spend 24 hours social-media free? Notice the difference in your attention, mood, and social connections.
-                </div>
-                <div>
-                  <a href="https://www.humane.tech/module4" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">Stolen Focus by Johann Hari (Course Reading)</a>
+                  <strong>Ready to try it?</strong> Start your 24-hour challenge today! Notice the difference in your attention, mood, and social connections.
                 </div>
               </div>
             </div>

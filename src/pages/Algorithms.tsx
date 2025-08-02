@@ -13,7 +13,7 @@ const Algorithms = () => {
         <div className="text-center space-y-4">
           <TypographyH1>🤖 Understanding Algorithms for Digital Wellness</TypographyH1>
           <TypographyP className="text-xl max-w-4xl mx-auto">
-            Your social media feed isn't random—it's carefully personalized by algorithms designed to keep you engaged. While this can show you relevant content, it can also create "filter bubbles" that limit diverse perspectives and contribute to stress, anxiety, and misinformation. Understanding how algorithms work empowers you to take control of your digital wellness.
+            Algorithms aren’t just doing their thing randomly, they’ve got goals, like keeping you hooked on content (so companies make more revenue from ads), boosting product sales, or making a service run smoother. They do this by analyzing humongous amounts of data, like Big Data level huge. That means tons of information coming in fast, from all kinds of sources, being crunched to figure out what grabs your attention. 
           </TypographyP>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-3xl mx-auto">
             <TypographyP className="text-sm">
@@ -31,19 +31,19 @@ const Algorithms = () => {
             <CardContent className="pt-6">
               <div className="space-y-6">
                 <TypographyP>
-                  Algorithms operate with definite goals in mind, such as selling products, increasing user engagement (which in turn drives advertising revenue), or improving service quality. They achieve this by analyzing vast quantities of Big Data—an immense volume of information processed with high velocity and variety.
+                  Algorithms operate with definite goals in mind, such as selling products, increasing user engagement (which in turn drives advertising revenue), or improving service quality. They achieve this by analyzing vast quantities of Big Data which is an immense volume of information processed with high velocity and variety.
                 </TypographyP>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-4">
                     <h4 className="font-semibold text-lg">Machine Learning & Neural Networks</h4>
                     <TypographyP className="text-sm">
-                      The core of how algorithms "learn" lies in machine learning, a process where algorithms are taught to recognize patterns in the world through the automated analysis of large datasets. This often involves neural networks, which mimic the human brain's layered perception using thousands or millions of processing nodes (artificial neurons).
+                      The core method behind how algorithms “learn” is called machine learning. It involves analyzing massive datasets to recognize patterns and make decisions based on the patterns. A common approach uses neural networks, systems made up of thousands or even millions of artificial neurons designed to simulate the layered way the human brain processes information.
                     </TypographyP>
                     
                     <h4 className="font-semibold text-lg">Deep Learning</h4>
                     <TypographyP className="text-sm">
-                      This takes machine learning further by stacking multiple neural networks, allowing for higher levels of abstraction and performance.
+                      By stacking multiple neural networks together, machine learning can reach higher levels of abstraction and performance, allowing systems to process complex information more effectively.
                     </TypographyP>
                   </div>
                   
@@ -77,7 +77,7 @@ const Algorithms = () => {
               <div className="space-y-4">
                 <TypographyH2>Inherent Biases and "Weapons of Math Destruction"</TypographyH2>
                 <TypographyP>
-                  It's critical to understand that algorithms are not perfectly objective; they can reflect the prejudices, biases, and presumptions of their designers. As data scientist Cathy O'Neil describes, "the math-powered applications powering the data economy were based on choices made by fallible human beings... many of these models encoded human prejudice, misunderstanding and bias into the software systems that increasingly managed our lives".
+                  It’s important to understand that algorithms aren’t always neutral, they often showcase the biases, assumptions, and limitations of the people who create them. As data scientist Cathy O'Neil explains, many algorithm-driven systems are built on human decisions, which means they can unintentionally carry over prejudice and misunderstanding. This can lead to serious real-world consequences, like reinforcing inequality in areas such as credit scoring, job applications, and even predictive policing. That’s why transparency and human oversight are crucial when designing and using these technologies.
                 </TypographyP>
                 <TypographyP className="text-sm">
                   This means algorithmic sorting can perpetuate marginalization, impacting areas like credit scores, job applications, or even predictive policing. Transparency and human oversight are crucial to address these concerns.
@@ -94,10 +94,10 @@ const Algorithms = () => {
               <div className="space-y-4">
                 <TypographyH2>AI Overviews and Generative AI</TypographyH2>
                 <TypographyP>
-                  Newer developments like Generative AI are changing how algorithms deliver information. Services like Google's AI Overviews use generative AI to create automatic summaries of web content in search results, potentially shifting Google from a "search engine" to a "search and answer engine" and impacting traffic to web publishers.
+                  The way algorithms deliver information is changing fast, thanks to tools like generative AI. For example, features like Google’s AI Overviews can now summarize web content right in your search results, shifting Google from just a “search engine” to more of a “search and answer engine.” This could seriously impact how much traffic goes to websites and publishers.
                 </TypographyP>
                 <TypographyP className="text-sm">
-                  Generative AI, including Large Language Models (LLMs) like ChatGPT, learns from the underlying distribution of data to produce original content, impacting various creative industries and raising significant ethical concerns around copyright, harmful content, and plagiarism.
+                  Generative AI, including Large Language Models (LLMs) like ChatGPT, creates original content by learning from patterns in massive datasets. While it’s a powerful tool, it also raises important questions around plagiarism, copyright, and the spread of harmful or misleading content, especially in creative industries.
                 </TypographyP>
               </div>
             </CardContent>
@@ -273,17 +273,17 @@ const Algorithms = () => {
               <div className="space-y-4">
                 <TypographyH2>The Attention Economy and Your Mental Health</TypographyH2>
                 <TypographyP>
-                  Algorithms are specifically designed to capture and monetize human attention. As former Google design ethicist Tristan Harris explains, we're living in an "attention economy" where platforms compete for the most valuable resource: your focus and time.
+                  Social media platforms are purposely built to keep you hooked, using tricks that tap into how our brains work. Knowing these tactics helps you spot when you're being pulled in. As former Google design ethicist Tristan Harris explains, we're living in an "attention economy" where platforms compete for the most valuable resource: your focus and time.
                 </TypographyP>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-4">
-                    <h4 className="font-semibold text-lg">Psychological Mechanisms</h4>
+                    <h4 className="font-semibold text-lg">Design Features That Keep You Scrolling</h4>
                     <ul className="text-sm space-y-2">
-                      <li>• <strong>Variable Reward Schedules:</strong> Like slot machines, unpredictable rewards (likes, comments) create addiction-like patterns</li>
-                      <li>• <strong>Social Validation Loops:</strong> Algorithms amplify our need for peer approval through engagement metrics</li>
-                      <li>• <strong>Fear of Missing Out (FOMO):</strong> Constant updates create anxiety about staying informed</li>
-                      <li>• <strong>Confirmation Bias:</strong> Algorithms show us content that confirms our existing beliefs</li>
+                      <li>• <strong>Infinite scroll:</strong> Your feed never ends, so it's hard to stop</li>
+                      <li>• <strong>Auto-play:</strong> Videos play one after another without pause</li>
+                      <li>• <strong>Typing indicators:</strong> That little "..." on WhatsApp keeps you waiting</li>
+                      <li>• <strong>Random rewards:</strong> Likes and notifications pop up unpredictably, like a slot machine</li>
                     </ul>
                   </div>
                   
@@ -310,13 +310,14 @@ const Algorithms = () => {
               <div className="space-y-4">
                 <TypographyH2>Filter Bubbles: When Algorithms Limit Your World</TypographyH2>
                 <TypographyP>
-                  Algorithms create personalized "filter bubbles" that can isolate you from diverse perspectives, contributing to stress, anxiety, and misinformation-driven confusion. Research from the Fondation Descartes shows how engagement-optimized recommender systems may promote sensational or polarizing content because they prioritize click-throughs and watch time.
+                  Algorithms often create personalized "filter bubbles",  showing you content that aligns with what you’ve already liked or watched i.e your interests. While this can make your feed feel familiar, it also limits your exposure to different perspectives. Over time, that narrow perspective can lead to stress, confusion, or even anxiety, especially when false or sensational content is involved.
+                  Research from the Fondation Descartes shows that recommender systems that are designed to maximize clicks and watch time, usually push dramatic or polarizing content to keep users engaged.
                 </TypographyP>
                 
                 <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
                   <h4 className="font-semibold text-sm mb-2">Digital Wellness Impact</h4>
                   <TypographyP className="text-sm">
-                    A narrow, sensational content diet can increase stress and contribute to misinformation-driven anxiety. Breaking out of filter bubbles supports better mental health and critical thinking.
+                    This kind of media diet, full of hype but lacking variety, can negatively affect mental well-being. Breaking out of filter bubbles helps boost critical thinking, reduce anxiety, and support a healthier relationship with digital content.
                   </TypographyP>
                 </div>
                 

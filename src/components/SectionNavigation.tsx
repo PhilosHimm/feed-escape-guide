@@ -11,6 +11,7 @@ export const sectionOrder = [
   { path: "/mental-health", label: "Mental Health" },
   { path: "/privacy", label: "Privacy" },
   { path: "/digital-balance", label: "Digital Balance" },
+  { path: "/digital-navigator", label: "Quiz" },
   { path: "/about", label: "About Us" },
   { path: "/sources", label: "Sources" },
 ];

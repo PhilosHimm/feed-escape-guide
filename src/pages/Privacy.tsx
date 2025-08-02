@@ -12,7 +12,7 @@ const Privacy = () => (
       <div className="space-y-4">
         <TypographyH1>🔒 Privacy: Protecting Your Digital Self</TypographyH1>
         <TypographyP className="text-xl">
-          Understanding the importance of digital privacy begins with recognizing that personal data is a precious resource, sought after by both corporations and criminals for profit. The availability of "free" communication tools online is often premised upon the commodification of your personal behavior.
+          Every click, every like, and every scroll builds your digital profile. It's like an invisible personality created by companies tracking your interest, habits, even mood, shaping the ads you see and the content you're shown. See how tracking works, then learn how you can reclaim control.
         </TypographyP>
         <Alert className="bg-red-50 border-red-200">
           <AlertTriangle className="h-4 w-4" />
@@ -62,40 +62,44 @@ const Privacy = () => (
             <div className="space-y-6">
               <div className="flex items-center gap-2 mb-4">
                 <Database className="h-5 w-5 text-red-600" />
-                <TypographyH2 className="text-red-800">Data Collection: The Extraction Apparatus</TypographyH2>
+                <TypographyH2 className="text-red-800">How Data Gets Profiled</TypographyH2>
               </div>
               
-              <TypographyP>
-                Digital platforms, especially major players like Google and Facebook, collect vast amounts of behavioral data from users. This extensive data collection is driven by the industry's view that "personal data will be the new oil." Platforms constantly "hoover up all of that juicy data" from user interactions, acting as an "extractive apparatus for data."
-              </TypographyP>
-
-              <div className="space-y-4">
-                <h4 className="font-semibold">Primary Collection Method: HTML Cookies</h4>
-                <TypographyP className="text-sm">
-                  A small file placed on your computer by websites to assign a unique identifier and record your activity, which is then repurposed for behavioral profiling and targeted advertising. This enables advertising to become progressively more "precise, targeted and data-driven."
-                </TypographyP>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-6">
                 <div className="space-y-4">
-                  <h4 className="font-semibold">Platform-Specific Examples</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li>• <strong>Google:</strong> Personalizes search results by analyzing search history, location, and device</li>
-                    <li>• <strong>Facebook:</strong> Tailors newsfeed based on engagement history with users and content</li>
-                    <li>• <strong>Smartphones:</strong> Tracking capabilities can be "hijacked by bad actors"</li>
-                    <li>• <strong>IoT Devices:</strong> Tiny sensors in everyday objects sending data over internet</li>
-                  </ul>
+                  <h4 className="font-semibold">Invisible Analysis</h4>
+                  <TypographyP className="text-sm">
+                    Sites analyze your visits and clicks, and even when you hover over something - even if you don't log in! This happens through tracking technologies.
+                  </TypographyP>
                 </div>
-                
+
                 <div className="space-y-4">
-                  <h4 className="font-semibold">Collection Sources</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li>• Cross-device tracking (sites, searches, purchases, locations)</li>
-                    <li>• Public records (court records, census, birth certificates)</li>
-                    <li>• Commercial lists (mailing lists, warranty registrations)</li>
-                    <li>• Credit card purchases and subscription data</li>
-                  </ul>
+                  <h4 className="font-semibold">Massive Sharing Networks</h4>
+                  <TypographyP className="text-sm">
+                    Most apps share data with 10+ partners - including ad networks, analytic companies, and data brokers. Your information flows through an interconnected ecosystem.
+                  </TypographyP>
                 </div>
+
+                <div className="space-y-4">
+                  <h4 className="font-semibold">Hyper-targeted Ads</h4>
+                  <TypographyP className="text-sm">
+                    Targeted ads are customized just for you based on recent purchases, conversations, and more.
+                  </TypographyP>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="font-semibold">PII (Personally Identifiable Information)</h4>
+                  <TypographyP className="text-sm">
+                    Sometimes due to data breaches or hackers, data from profiles or log in credentials, which can include: name, date of birth, age, phone number, address and more, can be leaked through these digital profiles. With company databases or exposed profiles, it can lead to identity theft, scams or other privacy violations.
+                  </TypographyP>
+                </div>
+
+                <Alert className="bg-blue-50 border-blue-200">
+                  <Lock className="h-4 w-4" />
+                  <AlertDescription>
+                    <strong>Helpful Tip:</strong> Create an unbreakable password using combinations of letters, numbers, and symbols and use a unique password across different accounts. Using a password manager (like LastPass, Bitwarden or your browsers built in one) can help secretly store (or even generate complex) passwords.
+                  </AlertDescription>
+                </Alert>
               </div>
             </div>
           </CardContent>

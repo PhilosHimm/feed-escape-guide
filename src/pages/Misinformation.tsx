@@ -12,7 +12,9 @@ const Misinformation = () => (
       <div className="space-y-4">
         <TypographyH1>🎭 Misinformation: Navigating the Complex Digital Information Landscape</TypographyH1>
         <TypographyP className="text-xl">
-          In our hyper-connected digital environment, we have access to an unimaginable wealth of information. However, this "info-glut" comes with significant challenges, notably the proliferation of misinformation, disinformation, and mal-information that can impact our mental health and decision-making.
+          Your feed might trap you in a filter bubble, only showing content what you already believe. This creates echo chambers where the information you hear is similar to your opinion. Both echo chambers and fake news can trick anyone. 
+          
+          It's important to sharpen and navigate those skills through the complex landscapes of information. Think you can spot the difference between fact and fiction? Test your skills with our quiz below:
         </TypographyP>
       </div>
 
@@ -28,13 +30,13 @@ const Misinformation = () => (
               
               <div className="space-y-4">
                 <TypographyP>
-                  While the circulation of falsehoods is not a new phenomenon, the internet has massively accelerated and amplified it. At the heart of this challenge are the algorithms that power our social media feeds, search results, and recommendations.
+                  Misinformation isn’t new, but the internet has made it spread faster and louder than ever. At the heart of this issue are the algorithms behind our search results, social media feeds, and content recommendations.
                 </TypographyP>
                 
                 <Alert className="bg-red-50 border-red-200">
                   <AlertTriangle className="h-4 w-4" />
                   <AlertDescription>
-                    <strong>The Economics of Emotion:</strong> These algorithms, often described as our most important information gatekeepers, are programmed to maximize user engagement and advertising revenue. This creates an economic incentive for disinformation to be recommended, as sensational or emotionally charged content drives higher engagement through "dopamine design" and "social-validation feedback loops."
+                    <strong>The Economics of Emotion:</strong> These algorithms, often described as today’s most powerful gatekeepers of information, are built to maximize user engagement and generate ad revenue. This has led to what’s known as the Emotional Economy, where sensational or emotionally charged content gets prioritized because it keeps people clicking.
                   </AlertDescription>
                 </Alert>
 
@@ -113,10 +115,21 @@ const Misinformation = () => (
             <div className="space-y-6">
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-6 w-6 text-green-500" />
-                <TypographyH2>Critical Thinking Tools: Methods for Fact-Checking</TypographyH2>
+                <TypographyH2>Fast Checking Toolkit</TypographyH2>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <ul className="space-y-3 text-sm">
+                  <li>• <strong>Check the source</strong> - Is it a reputable news organization?</li>
+                  <li>• <strong>Look for author credentials</strong> - Are they an expert in the field?</li>
+                  <li>• <strong>Verify with multiple sources</strong> - Does anyone else report the same information?</li>
+                  <li>• <strong>Check the date</strong> - Is this current or old news being recycled?</li>
+                  <li>• <strong>Look for evidence</strong> - Are there links to studies, official sources, or other verifiable data?</li>
+                  <li>• <strong>Check your bias</strong> - Does this confirm what you want to believe?</li>
+                </ul>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mt-6">
                 <div className="space-y-4">
                   <h4 className="font-semibold">Fact-Checking Resources</h4>
                   <ul className="space-y-2 text-sm">
@@ -137,6 +150,53 @@ const Misinformation = () => (
                   </ul>
                 </div>
               </div>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Building Digital Resilience */}
+      <section>
+        <Card className="border-blue-200 bg-blue-50/50">
+          <CardContent className="pt-6">
+            <div className="space-y-6">
+              <div className="flex items-center gap-2">
+                <Shield className="h-6 w-6 text-blue-500" />
+                <TypographyH2>Building Digital Resilience</TypographyH2>
+              </div>
+              
+              <TypographyP>
+                Digital resilience means understanding how social media is designed to affect you, using smart strategies to take back control, and becoming more aware of how your digital habits impact your emotions and thinking. It's all about slowing down and thinking critically before reacting or sharing online.
+              </TypographyP>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <h4 className="font-semibold">Self-Awareness Tips</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Check in with how you feel after scrolling</li>
+                    <li>• Notice when certain posts trigger strong emotions or feels</li>
+                    <li>• Pause and think before liking, commenting, or sharing heated content</li>
+                    <li>• Question where the info is coming from: be a fact-checker</li>
+                  </ul>
+                </div>
+                
+                <div className="space-y-4">
+                  <h4 className="font-semibold">Intentional Tech Use</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li>• Have a clear goal when you open social media</li>
+                    <li>• Set limits on how long you spend online</li>
+                    <li>• Focus on meaningful connections, not just mindless scrolling</li>
+                    <li>• Take regular breaks from screens to recharge</li>
+                  </ul>
+                </div>
+              </div>
+
+              <Alert className="bg-blue-100 border-blue-300">
+                <AlertTriangle className="h-4 w-4" />
+                <AlertDescription>
+                  <strong>Heads up:</strong> Misinformation is often made to spark big emotional reactions and bypass your logical thinking. Building digital resilience helps you stay calm, think clearly, and avoid getting caught up in the drama.
+                </AlertDescription>
+              </Alert>
             </div>
           </CardContent>
         </Card>

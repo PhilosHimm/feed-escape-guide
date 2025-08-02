@@ -10,16 +10,16 @@ import { SectionNavigation } from "@/components/SectionNavigation";
 
 const sections = [
   {
-    name: "Your Mental Health Online",
-    route: "/mental-health",
-    description: "Learn how social media affects your mood, sleep, and well-being—and discover happiness hacks for healthier usage.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=420&q=80",
-  },
-  {
     name: "How Algorithms Work",
     route: "/algorithms",
     description: "Understand how feeds are personalized and why breaking filter bubbles supports mental wellness.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    name: "Your Mental Health Online",
+    route: "/mental-health",
+    description: "Learn how social media affects your mood, sleep, and well-being—and discover happiness hacks for healthier usage.",
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=420&q=80",
   },
   {
     name: "Spotting Misinformation",
@@ -38,6 +38,12 @@ const sections = [
     route: "/digital-balance",
     description: "Build sustainable habits with screen time limits, offline activities, and digital detox strategies.",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    name: "Digital Wellness Quiz",
+    route: "/digital-navigator",
+    description: "Test your digital literacy skills with interactive scenarios and measure your progress toward digital wellness mastery.",
+    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=400&q=80",
   }
 ];
 
@@ -55,12 +61,13 @@ const Index = () => {
             Building a Healthier Relationship with Technology
           </TypographyH2>
           <TypographyLead className="max-w-3xl mx-auto">
-            Social media offers incredible benefits—connection, learning, creativity. But heavy or uninformed use can impact your mental health, privacy, and ability to think critically. This guide helps you understand algorithmic influences, recognize misinformation, protect your data, and develop healthy online habits.
+            Social media has amazing benefits, including connection, learning, and creativity. However, excessive or uneducated use might harm your mental health, privacy, and ability to think critically or logically. This tutorial’s gonna break down how algorithms shape what you see, how to spot fake news, keep your info safe, and build healthy habits online.
           </TypographyLead>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-4xl mx-auto text-left">
             <h3 className="font-semibold text-lg mb-3 text-center">What is Digital Wellness?</h3>
             <TypographyP className="text-sm">
-              Digital wellness is about finding balance between technology's benefits and risks. It means using social media intentionally, understanding how algorithms work, spotting misinformation, protecting your privacy, and maintaining your mental health online. Research shows that mindful technology use can reduce anxiety, improve sleep, and help you stay connected to what matters most.
+              Digital wellness is all about finding that sweet spot between the advantages and the problems of tech. It means being intentional with how you make use of social media, understanding how the algorithm plays you, spotting fake news, protecting your privacy, and keeping your mental health in check while you're online.
+              Studies show that when you use tech more mindfully, it equals you sleeping better, feeling less stressed, and staying focused on what really matters.
             </TypographyP>
           </div>
           <Button
