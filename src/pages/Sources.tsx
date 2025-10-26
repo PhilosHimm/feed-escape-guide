@@ -70,13 +70,13 @@ const sources = [
 	},
 	{
 		category: "Course Materials & Academic Sources",
-		desc: "Toronto Metropolitan University CEID100 course materials and foundational texts:",
+		desc: "Toronto Metropolitan University CEID100 course materials and foundational texts: (sources from course content, links not available online)",
 		links: [
-			{ label: "Stolen Focus: Why You Can't Pay Attention by Johann Hari", url: "" },
-			{ label: "The Age of Surveillance Capitalism by Shoshana Zuboff", url: "" },
-			{ label: "The Filter Bubble by Eli Pariser", url: "" },
-			{ label: "Digital Minimalism by Cal Newport", url: "" },
-			{ label: "Ten Arguments for Deleting Your Social Media Accounts Right Now by Jaron Lanier", url: "" },
+			{ label: "Stolen Focus: Why You Can't Pay Attention by Johann Hari"},
+			{ label: "The Age of Surveillance Capitalism by Shoshana Zuboff"},
+			{ label: "The Filter Bubble by Eli Pariser"},
+			{ label: "Digital Minimalism by Cal Newport"},
+			{ label: "Ten Arguments for Deleting Your Social Media Accounts Right Now by Jaron Lanier"},
 		],
 	},
 	{
