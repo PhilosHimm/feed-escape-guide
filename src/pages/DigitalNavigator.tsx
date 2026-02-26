@@ -41,13 +41,14 @@ const DigitalNavigator = () => {
             <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="space-y-2">
                 <Label htmlFor="brandFlaw">"What is the brand name and what is the 'fatal flaw' of the current site?"</Label>
-                <Input id="brandFlaw" value={brandAndFlaw} onChange={(event) => setBrandAndFlaw(event.target.value)} />
+                <Input id="brandFlaw" required value={brandAndFlaw} onChange={(event) => setBrandAndFlaw(event.target.value)} />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="direction">"Pick the Redesign Direction"</Label>
                 <select
                   id="direction"
+                  required
                   className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
                   value={direction}
                   onChange={(event) => setDirection(event.target.value)}
@@ -62,12 +63,12 @@ const DigitalNavigator = () => {
 
               <div className="space-y-2">
                 <Label htmlFor="pillars">"What are the 3 core pillars of this new experience?"</Label>
-                <Input id="pillars" value={pillars} onChange={(event) => setPillars(event.target.value)} />
+                <Input id="pillars" required value={pillars} onChange={(event) => setPillars(event.target.value)} />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="conversionGoal">"What is the ultimate conversion goal?"</Label>
-                <Input id="conversionGoal" value={conversionGoal} onChange={(event) => setConversionGoal(event.target.value)} />
+                <Input id="conversionGoal" required value={conversionGoal} onChange={(event) => setConversionGoal(event.target.value)} />
               </div>
 
               <Button type="submit">Submit AskUserQuestion Payload</Button>
