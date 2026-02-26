@@ -59,6 +59,8 @@ const NavBar = () => {
                 variant="ghost"
                 className="md:hidden"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-nav-menu"
               >
                 {isMobileMenuOpen ? (
                   <X className="h-4 w-4" />
@@ -71,7 +73,7 @@ const NavBar = () => {
           </div>
         </div>        {/* Mobile menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden">
+          <div id="mobile-nav-menu" className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t">
               {navList.map((item) => (
                 <Link
