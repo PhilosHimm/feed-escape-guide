@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowRight, Terminal, Activity, MousePointer2 } from "lucide-react";
+import { ArrowRight, Terminal, Activity, MousePointer2, Menu, X } from "lucide-react";
 import MagneticButton from "@/components/ui/magnetic-button";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,9 +15,20 @@ const colors = {
   text: "#111111",    // Black
 };
 
+const navItems = [
+  { label: "Algorithms", path: "/algorithms" },
+  { label: "Misinformation", path: "/misinformation" },
+  { label: "Mental Health", path: "/mental-health" },
+  { label: "Privacy", path: "/privacy" },
+  { label: "Balance", path: "/digital-balance" },
+  { label: "About", path: "/about" },
+  { label: "Sources", path: "/sources" },
+];
+
 export default function Index() {
   const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Animation Lifecycle
   useEffect(() => {
@@ -83,8 +94,40 @@ export default function Index() {
         </svg>
       </div>
 
-      {/* NAVBAR: The Floating Island */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-6 bg-[#E8E4DD]/80 backdrop-blur-xl px-6 py-3 rounded-full border border-[#111111]/10 shadow-lg transition-all duration-300 hover:border-[#E63B2E]/50 whitespace-nowrap">
+      {/* NAVBAR: Mobile Header */}
+      <nav className="fixed top-0 left-0 right-0 z-40 md:hidden flex items-center justify-between h-12 bg-[#E8E4DD]/90 backdrop-blur-xl px-4 border-b border-[#111111]/10">
+        <span className="font-bold tracking-tight uppercase text-sm">Feed Escape</span>
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-expanded={mobileMenuOpen}
+          aria-label="Toggle menu"
+          className="p-1 text-[#111111] hover:text-[#E63B2E] transition-colors"
+        >
+          {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+      </nav>
+      {mobileMenuOpen && (
+        <div className="fixed top-12 left-0 right-0 z-40 md:hidden bg-[#E8E4DD]/95 backdrop-blur-xl border-b border-[#111111]/10 px-4 py-3 space-y-1">
+          {navItems.map((item) => (
+            <button
+              key={item.path}
+              onClick={() => { navigate(item.path); setMobileMenuOpen(false); }}
+              className="block w-full text-left px-3 py-2 text-sm font-medium text-[#111111]/70 hover:text-[#E63B2E] hover:bg-[#111111]/5 rounded transition-colors"
+            >
+              {item.label}
+            </button>
+          ))}
+          <button
+            onClick={() => { navigate("/digital-navigator"); setMobileMenuOpen(false); }}
+            className="block w-full text-left px-3 py-2 text-sm font-medium text-[#E63B2E] font-semibold hover:bg-[#111111]/5 rounded transition-colors"
+          >
+            Initiate Quiz
+          </button>
+        </div>
+      )}
+
+      {/* NAVBAR: The Floating Island (desktop only) */}
+      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-40 hidden md:flex items-center gap-6 bg-[#E8E4DD]/80 backdrop-blur-xl px-6 py-3 rounded-full border border-[#111111]/10 shadow-lg transition-all duration-300 hover:border-[#E63B2E]/50 whitespace-nowrap">
         <span className="font-bold tracking-tight uppercase text-sm">Feed Escape</span>
         <div className="flex gap-4 text-xs font-medium">
           <button onClick={() => navigate("/algorithms")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Algorithms</button>
@@ -101,7 +144,7 @@ export default function Index() {
       </nav>
 
       {/* A. HERO SECTION: The Opening Shot */}
-      <section className="relative w-full px-8 md:px-16 pt-36 pb-24">
+      <section className="relative w-full px-8 md:px-16 pt-16 md:pt-36 pb-24">
 
         <div className="relative z-10 max-w-5xl">
           <p className="hero-reveal font-['Space_Mono'] text-[#E63B2E] font-bold tracking-widest uppercase mb-4 text-sm flex items-center gap-2">
@@ -111,7 +154,7 @@ export default function Index() {
           <h1 className="hero-reveal text-4xl md:text-6xl font-bold tracking-tighter leading-[1.1] text-[#111111] uppercase mb-2">
             The Feed Escape used to be a safe textbook.
           </h1>
-          <h1 className="hero-reveal text-6xl md:text-8xl font-['DM_Serif_Display'] italic text-[#111111] leading-[1]">
+          <h1 className="hero-reveal text-5xl md:text-8xl font-['DM_Serif_Display'] italic text-[#111111] leading-[1]">
             Now, it is an <span className="text-[#E63B2E]">Urgent Intervention.</span>
           </h1>
           <p className="hero-reveal mt-8 max-w-2xl text-lg font-medium text-[#111111]/70 leading-relaxed">
@@ -126,7 +169,7 @@ export default function Index() {
       </section>
 
       {/* B. FEATURES: Interactive Functional Artifacts */}
-      <section className="py-32 px-8 md:px-16 bg-[#F5F3EE]">
+      <section className="py-16 md:py-32 px-8 md:px-16 bg-[#F5F3EE]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
           
           {/* Card 1: Diagnostic Shuffler (Algorithmic Transparency) */}
@@ -165,7 +208,7 @@ export default function Index() {
       </section>
 
       {/* C. PHILOSOPHY: The Manifesto */}
-      <section className="philosophy-section relative py-40 bg-[#111111] text-[#F5F3EE] overflow-hidden">
+      <section className="philosophy-section relative py-20 md:py-40 bg-[#111111] text-[#F5F3EE] overflow-hidden">
         <div className="absolute inset-0 opacity-20 grayscale mix-blend-luminosity">
           <img src="https://images.unsplash.com/photo-1558244402-286dd748c593?q=80&w=2560&auto=format&fit=crop" className="w-full h-full object-cover" alt="texture" />
         </div>
@@ -173,19 +216,19 @@ export default function Index() {
           <p className="philosophy-text font-['Space_Mono'] text-sm tracking-widest text-[#F5F3EE]/60 uppercase mb-8">
             The Industry Standard focuses on: Passive scrolling & endless data harvesting.
           </p>
-          <h2 className="philosophy-text text-5xl md:text-8xl font-['DM_Serif_Display'] italic leading-tight">
+          <h2 className="philosophy-text text-4xl md:text-8xl font-['DM_Serif_Display'] italic leading-tight">
             We focus on: <span className="text-[#E63B2E]">Attentional Autonomy.</span>
           </h2>
         </div>
       </section>
 
       {/* D. PROTOCOL: Sticky Stacking Archive */}
-      <section className="bg-[#F5F3EE] pb-32">
+      <section className="bg-[#F5F3EE] pb-16 md:pb-32">
         <div className="h-screen w-full protocol-card bg-[#E8E4DD] rounded-[3rem] p-12 md:p-24 flex flex-col justify-center border-t border-[#111111]/10 sticky top-0">
           <div className="max-w-4xl">
             <span className="font-['Space_Mono'] text-[#E63B2E] text-2xl">01 //</span>
-            <h2 className="text-6xl md:text-8xl font-bold tracking-tighter uppercase mt-4 mb-6 text-[#111111]">Recognize the Loop</h2>
-            <p className="text-2xl text-[#111111]/70 max-w-2xl font-['DM_Serif_Display'] italic">Understand how variable rewards and filter bubbles manipulate your dopamine baselines.</p>
+            <h2 className="text-4xl md:text-8xl font-bold tracking-tighter uppercase mt-4 mb-6 text-[#111111]">Recognize the Loop</h2>
+            <p className="text-lg md:text-2xl text-[#111111]/70 max-w-2xl font-['DM_Serif_Display'] italic">Understand how variable rewards and filter bubbles manipulate your dopamine baselines.</p>
           </div>
           <Activity className="absolute right-12 md:right-32 bottom-24 w-48 h-48 text-[#111111]/5" />
         </div>
@@ -193,8 +236,8 @@ export default function Index() {
         <div className="h-screen w-full protocol-card bg-[#E63B2E] rounded-[3rem] p-12 md:p-24 flex flex-col justify-center border-t border-[#111111]/10 sticky top-0 text-[#F5F3EE]">
           <div className="max-w-4xl">
             <span className="font-['Space_Mono'] text-[#111111] text-2xl">02 //</span>
-            <h2 className="text-6xl md:text-8xl font-bold tracking-tighter uppercase mt-4 mb-6">Reclaim the Data</h2>
-            <p className="text-2xl text-[#F5F3EE]/80 max-w-2xl font-['DM_Serif_Display'] italic">Map out the data brokers, sever third-party trackers, and deploy privacy-first defaults.</p>
+            <h2 className="text-4xl md:text-8xl font-bold tracking-tighter uppercase mt-4 mb-6">Reclaim the Data</h2>
+            <p className="text-lg md:text-2xl text-[#F5F3EE]/80 max-w-2xl font-['DM_Serif_Display'] italic">Map out the data brokers, sever third-party trackers, and deploy privacy-first defaults.</p>
           </div>
           <Terminal className="absolute right-12 md:right-32 bottom-24 w-48 h-48 text-[#111111]/20" />
         </div>
@@ -202,16 +245,16 @@ export default function Index() {
         <div className="h-screen w-full protocol-card bg-[#111111] rounded-[3rem] p-12 md:p-24 flex flex-col justify-center border-t border-[#111111]/10 sticky top-0 text-[#F5F3EE]">
           <div className="max-w-4xl">
             <span className="font-['Space_Mono'] text-[#E63B2E] text-2xl">03 //</span>
-            <h2 className="text-6xl md:text-8xl font-bold tracking-tighter uppercase mt-4 mb-6">Establish Boundaries</h2>
-            <p className="text-2xl text-[#F5F3EE]/70 max-w-2xl font-['DM_Serif_Display'] italic">Design friction into your devices to protect your sleep, mood, and critical thinking.</p>
+            <h2 className="text-4xl md:text-8xl font-bold tracking-tighter uppercase mt-4 mb-6">Establish Boundaries</h2>
+            <p className="text-lg md:text-2xl text-[#F5F3EE]/70 max-w-2xl font-['DM_Serif_Display'] italic">Design friction into your devices to protect your sleep, mood, and critical thinking.</p>
           </div>
           <MousePointer2 className="absolute right-12 md:right-32 bottom-24 w-48 h-48 text-[#E63B2E]/20" />
         </div>
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#111111] text-[#F5F3EE] rounded-t-[4rem] px-8 py-16 mt-[-4rem] relative z-20">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <footer className="bg-[#111111] text-[#F5F3EE] rounded-t-[4rem] px-8 py-12 md:py-16 mt-[-4rem] relative z-20">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
           <div>
             <h3 className="text-2xl font-bold uppercase tracking-tighter mb-2">Feed Escape Guide</h3>
             <p className="font-['Space_Mono'] text-sm text-[#F5F3EE]/50">Digital Wellness Curriculum © 2026</p>
