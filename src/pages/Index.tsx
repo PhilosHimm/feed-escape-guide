@@ -83,12 +83,16 @@ export default function Index() {
       </div>
 
       {/* NAVBAR: The Floating Island */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-8 bg-[#E8E4DD]/80 backdrop-blur-xl px-8 py-4 rounded-full border border-[#111111]/10 shadow-lg transition-all duration-300 hover:border-[#E63B2E]/50">
+      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-6 bg-[#E8E4DD]/80 backdrop-blur-xl px-6 py-3 rounded-full border border-[#111111]/10 shadow-lg transition-all duration-300 hover:border-[#E63B2E]/50 whitespace-nowrap">
         <span className="font-bold tracking-tight uppercase text-sm">Feed Escape</span>
-        <div className="flex gap-6 text-sm font-medium">
+        <div className="flex gap-4 text-xs font-medium">
           <button onClick={() => navigate("/algorithms")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Algorithms</button>
+          <button onClick={() => navigate("/misinformation")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Misinformation</button>
+          <button onClick={() => navigate("/mental-health")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Mental Health</button>
           <button onClick={() => navigate("/privacy")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Privacy</button>
           <button onClick={() => navigate("/digital-balance")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Balance</button>
+          <button onClick={() => navigate("/about")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">About</button>
+          <button onClick={() => navigate("/sources")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Sources</button>
         </div>
         <MagneticButton onClick={() => navigate("/digital-navigator")}>
           Initiate Quiz
@@ -96,15 +100,7 @@ export default function Index() {
       </nav>
 
       {/* A. HERO SECTION: The Opening Shot */}
-      <section className="relative h-[100dvh] w-full flex items-end pb-24 px-8 md:px-16">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1517420879255-ae4658c19a27?q=80&w=2560&auto=format&fit=crop"
-            alt="Brutalist architecture"
-            className="w-full h-full object-cover grayscale opacity-80"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#F5F3EE] via-[#F5F3EE]/80 to-transparent" />
-        </div>
+      <section className="relative w-full px-8 md:px-16 pt-36 pb-24">
 
         <div className="relative z-10 max-w-5xl">
           <p className="hero-reveal font-['Space_Mono'] text-[#E63B2E] font-bold tracking-widest uppercase mb-4 text-sm flex items-center gap-2">
