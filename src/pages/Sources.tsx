@@ -130,7 +130,7 @@ const sources = [
 ];
 
 const Sources = () => (
-	<div className="container mx-auto py-8 px-4">
+	<div className="container mx-auto pt-20 pb-8 px-4">
 		<div className="max-w-4xl mx-auto space-y-8">
 			<div className="space-y-4">
 				<TypographyH1>Sources & Research Citations</TypographyH1>

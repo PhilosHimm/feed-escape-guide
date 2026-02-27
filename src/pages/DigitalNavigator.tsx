@@ -180,7 +180,7 @@ const DigitalNavigator = () => {
   if (gameCompleted) {
     const scoreMessage = getScoreMessage();
     return (
-      <div className="container mx-auto py-8 px-4">
+      <div className="container mx-auto pt-20 pb-8 px-4">
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="text-center space-y-6">
             <TypographyH1>🎉 Quiz Complete!</TypographyH1>
@@ -262,7 +262,7 @@ const DigitalNavigator = () => {
   const progress = ((currentScenario + 1) / scenarios.length) * 100;
 
   return (
-    <div className="container mx-auto py-8 px-4">
+    <div className="container mx-auto pt-20 pb-8 px-4">
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="text-center space-y-4">
           <TypographyH1>🧭 Digital Wellness Quiz</TypographyH1>

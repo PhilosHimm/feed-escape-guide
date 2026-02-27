@@ -2,33 +2,16 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowRight, Terminal, Activity, MousePointer2, Menu, X } from "lucide-react";
+import { ArrowRight, Terminal, Activity, MousePointer2 } from "lucide-react";
 import MagneticButton from "@/components/ui/magnetic-button";
 
 gsap.registerPlugin(ScrollTrigger);
 
 // --- PRESET C "Kinetic Signal" DESIGN TOKENS ---
-const colors = {
-  primary: "#E8E4DD", // Paper
-  accent: "#E63B2E",  // Signal Red
-  bg: "#F5F3EE",      // Off-white
-  text: "#111111",    // Black
-};
-
-const navItems = [
-  { label: "Algorithms", path: "/algorithms" },
-  { label: "Misinformation", path: "/misinformation" },
-  { label: "Mental Health", path: "/mental-health" },
-  { label: "Privacy", path: "/privacy" },
-  { label: "Balance", path: "/digital-balance" },
-  { label: "About", path: "/about" },
-  { label: "Sources", path: "/sources" },
-];
 
 export default function Index() {
   const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Animation Lifecycle
   useEffect(() => {
@@ -93,55 +76,6 @@ export default function Index() {
           <rect width="100%" height="100%" filter="url(#noiseFilter)" />
         </svg>
       </div>
-
-      {/* NAVBAR: Mobile Header */}
-      <nav className="fixed top-0 left-0 right-0 z-40 md:hidden flex items-center justify-between h-12 bg-[#E8E4DD]/90 backdrop-blur-xl px-4 border-b border-[#111111]/10">
-        <span className="font-bold tracking-tight uppercase text-sm">Feed Escape</span>
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-expanded={mobileMenuOpen}
-          aria-label="Toggle menu"
-          className="p-1 text-[#111111] hover:text-[#E63B2E] transition-colors"
-        >
-          {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
-      </nav>
-      {mobileMenuOpen && (
-        <div className="fixed top-12 left-0 right-0 z-40 md:hidden bg-[#E8E4DD]/95 backdrop-blur-xl border-b border-[#111111]/10 px-4 py-3 space-y-1">
-          {navItems.map((item) => (
-            <button
-              key={item.path}
-              onClick={() => { navigate(item.path); setMobileMenuOpen(false); }}
-              className="block w-full text-left px-3 py-2 text-sm font-medium text-[#111111]/70 hover:text-[#E63B2E] hover:bg-[#111111]/5 rounded transition-colors"
-            >
-              {item.label}
-            </button>
-          ))}
-          <button
-            onClick={() => { navigate("/digital-navigator"); setMobileMenuOpen(false); }}
-            className="block w-full text-left px-3 py-2 text-sm font-medium text-[#E63B2E] font-semibold hover:bg-[#111111]/5 rounded transition-colors"
-          >
-            Initiate Quiz
-          </button>
-        </div>
-      )}
-
-      {/* NAVBAR: The Floating Island (desktop only) */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-40 hidden md:flex items-center gap-6 bg-[#E8E4DD]/80 backdrop-blur-xl px-6 py-3 rounded-full border border-[#111111]/10 shadow-lg transition-all duration-300 hover:border-[#E63B2E]/50 whitespace-nowrap">
-        <span className="font-bold tracking-tight uppercase text-sm">Feed Escape</span>
-        <div className="flex gap-4 text-xs font-medium">
-          <button onClick={() => navigate("/algorithms")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Algorithms</button>
-          <button onClick={() => navigate("/misinformation")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Misinformation</button>
-          <button onClick={() => navigate("/mental-health")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Mental Health</button>
-          <button onClick={() => navigate("/privacy")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Privacy</button>
-          <button onClick={() => navigate("/digital-balance")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Balance</button>
-          <button onClick={() => navigate("/about")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">About</button>
-          <button onClick={() => navigate("/sources")} className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all">Sources</button>
-        </div>
-        <MagneticButton onClick={() => navigate("/digital-navigator")}>
-          Initiate Quiz
-        </MagneticButton>
-      </nav>
 
       {/* A. HERO SECTION: The Opening Shot */}
       <section className="relative w-full px-8 md:px-16 pt-16 md:pt-36 pb-24">
