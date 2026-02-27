@@ -13,7 +13,7 @@ const team = [
 ];
 
 const About = () => (
-	<div className="container mx-auto py-8 px-4">
+	<div className="container mx-auto pt-20 pb-8 px-4">
 		<div className="max-w-4xl mx-auto space-y-8">
 			<TypographyH1>About Us</TypographyH1>
 
