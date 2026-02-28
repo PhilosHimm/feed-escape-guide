@@ -34,7 +34,7 @@ const sources = [
       { label: "News Literacy Project", url: "https://newslit.org" },
       { label: "Privacy Badger", url: "https://privacybadger.org" },
       { label: "CBC Reset Podcast", url: "https://www.cbc.ca/radio/podcastnews/reset" },
-      { label: "Stolen Focus – Johann Hari", url: "https://www.humane.tech/module4" },
+      { label: "Stolen Focus – Johann Hari", url: "https://johnhari.com/stolen-focus/" },
     ],
   },
 ];

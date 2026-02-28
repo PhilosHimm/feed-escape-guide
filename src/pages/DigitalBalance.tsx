@@ -327,7 +327,7 @@ const DigitalBalance = () => {
             </div>
             <div className="mt-6">
               <a
-                href="https://www.humane.tech/module4"
+                href="https://johnhari.com/stolen-focus/"
                 className="font-['Space_Mono'] uppercase tracking-widest text-xs text-[#E63B2E] underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-transform inline-block"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -380,7 +380,7 @@ const DigitalBalance = () => {
               <span className="font-['Space_Mono'] uppercase tracking-widest text-xs text-[#F5F3EE]/40 block mb-4">Recommended Tools</span>
               <p className="font-['Space_Grotesk'] text-base leading-relaxed text-[#F5F3EE]/80 mb-4">
                 <a href="https://forestapp.cc/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">Forest</a>,{" "}
-                <a href="https://screenzen.io/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">ScreenZen</a>,{" "}
+                <a href="https://www.screentimezen.com/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">ScreenZen</a>,{" "}
                 <a href="https://rescuetime.com/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">RescueTime</a>, iOS/Android built-in time limits.
               </p>
               <p className="font-['Space_Grotesk'] text-sm text-[#F5F3EE]/60">
@@ -417,8 +417,8 @@ const DigitalBalance = () => {
           <div className="fade-up bg-[#E8E4DD] border border-[#111111]/10 rounded-[2rem] p-8">
             <h4 className="font-['Space_Mono'] uppercase tracking-widest text-xs text-[#111111]/50 mb-4">Course Materials</h4>
             <ul className="space-y-2 text-sm font-['Space_Grotesk']">
-              <li>• <a href="https://www.humane.tech/module4" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">Stolen Focus by Johann Hari (Course Reading)</a></li>
-              <li>• <a href="https://www.humane.tech/module5" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">Course Module 5 - Digital Wellness</a></li>
+              <li>• <a href="https://johnhari.com/stolen-focus/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">Stolen Focus by Johann Hari (Course Reading)</a></li>
+              <li>• Course Module 5 - Digital Wellness (TMU CEID100 internal course content)</li>
             </ul>
           </div>
 
@@ -426,7 +426,7 @@ const DigitalBalance = () => {
             <h4 className="font-['Space_Mono'] uppercase tracking-widest text-xs text-[#111111]/50 mb-4">Digital Wellness Tools</h4>
             <ul className="space-y-2 text-sm font-['Space_Grotesk']">
               <li>• <a href="https://forestapp.cc/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">Forest App</a></li>
-              <li>• <a href="https://screenzen.io/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">ScreenZen</a></li>
+              <li>• <a href="https://www.screentimezen.com/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">ScreenZen</a></li>
               <li>• <a href="https://rescuetime.com/" className="underline hover:-translate-y-[1px] hover:text-[#E63B2E] transition-all inline-block" target="_blank" rel="noopener noreferrer">RescueTime</a></li>
               <li>• iOS Screen Time and Android Digital Wellbeing documentation</li>
             </ul>

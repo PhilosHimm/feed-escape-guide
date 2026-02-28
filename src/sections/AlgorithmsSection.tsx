@@ -35,7 +35,7 @@ const AlgorithmsSection = () => {
             <div className="mt-2 text-sm text-purpleblue-600">
               <a href="https://www.humanetech.com/" className="underline" target="_blank" rel="noopener noreferrer">Center for Humane Tech</a>
               {" · "}
-              <a href="https://www.humane.tech/module5" className="underline" target="_blank" rel="noopener noreferrer">Course Reading</a>
+              <a href="https://www.humanetech.com/" className="underline" target="_blank" rel="noopener noreferrer">Center for Humane Technology Resources</a>
             </div>
           </div>
         </div>
