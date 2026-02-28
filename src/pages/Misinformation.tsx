@@ -375,7 +375,7 @@ const Misinformation = () => {
           <span className="text-[#111111]/30">&middot;</span>
           <a href="https://newslit.org" className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all underline" target="_blank" rel="noopener noreferrer">News Literacy Project</a>
           <span className="text-[#111111]/30">&middot;</span>
-          <a href="https://firstdraftnews.org" className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all underline" target="_blank" rel="noopener noreferrer">First Draft</a>
+          <a href="https://reporterslab.org/fact-checking/" className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all underline" target="_blank" rel="noopener noreferrer">Duke Reporters' Lab</a>
           <span className="text-[#111111]/30">&middot;</span>
           <a href="https://humanetech.com" className="hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all underline" target="_blank" rel="noopener noreferrer">Center for Humane Technology</a>
         </div>
@@ -407,7 +407,7 @@ const Misinformation = () => {
               <ul className="space-y-3 text-sm leading-relaxed text-[#F5F3EE]/80">
                 <li>• <a href="https://mediasmarts.ca" className="text-[#E63B2E] hover:-translate-y-[1px] inline-block transition-transform underline" target="_blank" rel="noopener noreferrer">MediaSmarts Canada</a></li>
                 <li>• <a href="https://newslit.org" className="text-[#E63B2E] hover:-translate-y-[1px] inline-block transition-transform underline" target="_blank" rel="noopener noreferrer">News Literacy Project</a></li>
-                <li>• <a href="https://firstdraftnews.org" className="text-[#E63B2E] hover:-translate-y-[1px] inline-block transition-transform underline" target="_blank" rel="noopener noreferrer">First Draft &mdash; Misinformation Research</a></li>
+                <li>• <a href="https://reporterslab.org/fact-checking/" className="text-[#E63B2E] hover:-translate-y-[1px] inline-block transition-transform underline" target="_blank" rel="noopener noreferrer">Duke Reporters' Lab &mdash; Fact-Checking Research</a></li>
               </ul>
             </div>
             <div className="bg-[#F5F3EE]/5 border border-[#F5F3EE]/10 rounded-[2rem] p-8 space-y-4">

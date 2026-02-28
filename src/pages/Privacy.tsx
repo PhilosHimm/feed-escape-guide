@@ -458,7 +458,7 @@ const Privacy = () => {
             <div className="fade-up bg-[#F5F3EE] rounded-[2rem] border border-[#111111]/10 p-8">
               <span className="font-['Space_Mono'] text-[#E63B2E] text-xs tracking-widest uppercase block mb-4">Research &amp; Organizations</span>
               <ul className="text-sm space-y-2 text-[#111111]/70">
-                <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#E63B2E] mt-1.5 shrink-0" /><a href="https://nymity.ch/" className="underline underline-offset-4 hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all" target="_blank" rel="noopener noreferrer">NYM.com - Data Broker Research</a></li>
+                <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#E63B2E] mt-1.5 shrink-0" /><a href="https://privacyrights.org/" className="underline underline-offset-4 hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all" target="_blank" rel="noopener noreferrer">Privacy Rights Clearinghouse - Data Broker Research</a></li>
                 <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#E63B2E] mt-1.5 shrink-0" /><a href="https://www.eff.org/" className="underline underline-offset-4 hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all" target="_blank" rel="noopener noreferrer">Electronic Frontier Foundation</a></li>
                 <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#E63B2E] mt-1.5 shrink-0" /><a href="https://foundation.mozilla.org/" className="underline underline-offset-4 hover:text-[#E63B2E] hover:-translate-y-[1px] transition-all" target="_blank" rel="noopener noreferrer">Mozilla Foundation - Internet Health</a></li>
               </ul>
@@ -491,7 +491,7 @@ const Privacy = () => {
           </div>
           <div className="fade-up mt-8 text-center">
             <p className="text-xs text-[#111111]/50 font-['Space_Mono'] tracking-wider">
-              Sources: NYM.com research on data brokers, PIPEDA documentation, cybersecurity best practices, and digital privacy frameworks
+              Sources: Privacy Rights Clearinghouse research on data brokers, PIPEDA documentation, cybersecurity best practices, and digital privacy frameworks
             </p>
           </div>
         </div>

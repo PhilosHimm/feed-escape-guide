@@ -14,14 +14,14 @@ const DigitalBalanceSection = () => {
         <Checklist />
         <div className="mt-6 flex flex-wrap gap-4 text-sm">
           <div className="bg-purpleblue-50 border-l-4 border-purpleblue-500 p-3 rounded flex-1 min-w-xs">
-            <strong>Tools:</strong> <a href="https://forestapp.cc/" className="underline text-purpleblue-600" target="_blank" rel="noopener noreferrer">Forest</a>, <a href="https://screenzen.io/" className="underline text-purpleblue-600" target="_blank" rel="noopener noreferrer">ScreenZen</a>, iOS/Android time limits
+            <strong>Tools:</strong> <a href="https://forestapp.cc/" className="underline text-purpleblue-600" target="_blank" rel="noopener noreferrer">Forest</a>, <a href="https://www.screentimezen.com/" className="underline text-purpleblue-600" target="_blank" rel="noopener noreferrer">ScreenZen</a>, iOS/Android time limits
           </div>
           <div className="flex-1 min-w-xs">
             <div className="mb-2 text-purpleblue-600">
               <strong>Challenge:</strong> Try a 24hr “feed detox”  can you do it? 💡
             </div>
             <div>
-              <a href="https://www.humane.tech/module4" className="underline" target="_blank" rel="noopener noreferrer">Stolen Focus by Johann Hari (Course Reading)</a>
+              <a href="https://johnhari.com/stolen-focus/" className="underline" target="_blank" rel="noopener noreferrer">Stolen Focus by Johann Hari (Course Reading)</a>
             </div>
           </div>
         </div>
